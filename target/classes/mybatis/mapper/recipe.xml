@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="recipe">
+	
+	<select id="getRecipeList" resultType="recipe">
+		SELECT *
+		FROM tb_recipe
+	</select>
+
+	<select id="getRecipeDataList" parameterType="recipe" resultType="recipe">
+		SELECT *
+		FROM v_recipe_data
+		WHERE 1=1
+		AND r_idx = ${r_idx}
+		AND r_data_idx = ${r_data_idx}
+		ORDER BY r_idx, r_data_idx, segment
+	</select>
+	
+</mapper>
