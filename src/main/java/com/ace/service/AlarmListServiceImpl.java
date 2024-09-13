@@ -22,7 +22,7 @@ public class AlarmListServiceImpl implements AlarmListService{
 	}
 	
 	@Override
-    public void updateComment(String acRegtime, String acComment) {
-        alarmListDao.updateComment(acRegtime, acComment);
+    public void updateComment(String acTag, String acComment) {
+        alarmListDao.updateComment(acTag, acComment);
     }
 }

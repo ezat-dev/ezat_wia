@@ -10,6 +10,6 @@ public interface AlarmListDao {
 	
 	void updateFileName(String acRegtime, String fileName);
 	
-	void updateComment(String acRegtime, String acComment);
+	void updateComment(String acTag, String acComment);
 
 }

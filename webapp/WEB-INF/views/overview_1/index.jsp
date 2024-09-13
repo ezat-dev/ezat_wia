@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/DHT/css/overview_1/vars.css">
   <link rel="stylesheet" href="/DHT/css/overview_1/style.css">
+  <%@ page contentType="text/html; charset=UTF-8" language="java" %>
+  
   
   <style>
   

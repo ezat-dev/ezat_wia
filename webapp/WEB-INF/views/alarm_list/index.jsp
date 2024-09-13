@@ -115,10 +115,6 @@
   </div>
   
   
-  
-  
-  
-  
   <div class="alarm-modal" id="modal">
         <div class="popup-box">
             <div class="popup-beader"></div>
@@ -210,19 +206,20 @@
 	});
 
 
-
+var acTag = $(".frame-1").val();
 
 //acComment 저장 함수
   function saveComment(acRegtime) {
     const commentInput = $('#acComment_' + acRegtime);
     const newComment = commentInput.val();
+    var acTag = $(".frame-1").text().trim();
 
     $.ajax({
-        url: '/alarm_list_controller/updateComment',
+        url: '${pageContext.request.contextPath}/alarm_list/updateComment',
         type: 'POST',
         contentType: 'application/json',
         data: JSON.stringify({
-            acRegtime: acRegtime,
+        	acTag: acTag,
             acComment: newComment
         }),
         success: function() {
@@ -232,6 +229,9 @@
             alert("저장 실패.");
         }
     });
+
+    console.log("acTag:", acTag);
+    console.log("acComment:", newComment); 
 }
 
 

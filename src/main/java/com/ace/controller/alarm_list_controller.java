@@ -61,10 +61,10 @@ public class alarm_list_controller {
     
     @RequestMapping(value = "/updateComment", method = RequestMethod.POST)
     public ResponseEntity<Void> updateComment(@RequestBody AlarmList alarmList) {
-        String acRegtime = alarmList.getAcRegtime();
+        String acTag = alarmList.getAcTag();
         String acComment = alarmList.getAcComment();
 
-        alarmListService.updateComment(acRegtime, acComment);
+        alarmListService.updateComment(acTag, acComment);
         
         return ResponseEntity.ok().build(); 
     }

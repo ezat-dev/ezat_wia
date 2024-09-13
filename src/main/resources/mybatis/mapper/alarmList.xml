@@ -16,9 +16,8 @@
 	</update>
 	
 	<update id="updateComment">
-        UPDATE tb_alarm_cmt
-        SET ac_comment = #{acComment}
-        WHERE ac_regtime = #{acRegtime}
-    </update>
-
+	    UPDATE tb_alarm_cmt
+	    SET ac_comment = #{acComment}
+	    WHERE ac_tag = #{acTag}
+</update>
 </mapper>

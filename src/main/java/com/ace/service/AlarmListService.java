@@ -10,5 +10,5 @@ public interface AlarmListService {
 	
 	void saveFileName(String acRegtime, String fileName);
 	
-	void updateComment(String acRegtime, String acComment);
+	void updateComment(String acTag, String acComment);
 }

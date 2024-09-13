@@ -29,9 +29,9 @@ public class AlarmListDaoImpl implements AlarmListDao{
 	    }
 	  
 	  @Override
-	    public void updateComment(String acRegtime, String acComment) {
+	    public void updateComment(String acTag, String acComment) {
 	        Map<String, Object> params = new HashMap<>();
-	        params.put("acRegtime", acRegtime);
+	        params.put("acTag", acTag);
 	        params.put("acComment", acComment);
 	        sqlSession.update("alarmList.updateComment", params); // 매퍼 호출하기
 	    }
