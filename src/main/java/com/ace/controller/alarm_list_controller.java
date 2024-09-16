@@ -30,6 +30,8 @@ public class alarm_list_controller {
         model.addAttribute("alarmList", alarmList); 
         return "/alarm_list/index.jsp"; // 
     }
+    
+    
 
     
     

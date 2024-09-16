@@ -6,6 +6,11 @@
   height: 878px;
   position: relative;
 }
+.group-2 {
+  width: 1918px;
+  height: 878px;
+  position: static;
+}
 .group-1 {
   width: 1918px;
   height: 878px;
@@ -19,23 +24,13 @@
   left: 0px;
   top: 0px;
 }
-  #ft {
-  background-color: #123478;
-  height: 72.43px;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 10; /* 필요시 조정, 다른 요소들보다 위에 표시되도록 */
-}
-   
-.main {
-  background: #ffffff;
+.footer {
+  background: #123478;
   width: 1918px;
-  height: 840px;
+  height: 72.43px;
   position: absolute;
   left: 0px;
-  top: 60.68px;
+  top: 805.57px;
 }
 .hamburger-icon-svg-1 {
   width: 33px;
@@ -47,56 +42,19 @@
   transform: rotate(0deg) scale(1, -1);
   object-fit: cover;
 }
-.group-2 {
-  width: 1888px;
-  height: 722px;
-  position: static;
-}
-.background-1 {
-  width: 271px;
-  height: 215px;
+.cm-2-1-1 {
+  width: 1219px;
+  height: 397px;
   position: absolute;
-  left: 1393px;
-  top: 116px;
-  object-fit: cover;
-}
-.cm {
-  width: 1858px;
-  height: 445px;
-  position: absolute;
-  left: 13px;
-  top: 140px;
-  object-fit: cover;
-}
-.short-1 {
-  width: 74px;
-  height: 85px;
-  position: absolute;
-  left: 491px;
-  top: 380px;
-  object-fit: cover;
-}
-.xbox-1 {
-  width: 122px;
-  height: 123px;
-  position: absolute;
-  left: 549px;
-  top: 279px;
-  object-fit: cover;
-}
-.xbox-2 {
-  width: 122px;
-  height: 124px;
-  position: absolute;
-  left: 1278px;
-  top: 271px;
+  left: 610px;
+  top: 171px;
   object-fit: cover;
 }
 .elevator-1 {
   width: 68px;
   height: 184px;
   position: absolute;
-  left: 1577px;
+  left: 1576px;
   top: 313px;
   transform-origin: 0 0;
   transform: rotate(0deg) scale(-1, 1);
@@ -106,7 +64,7 @@
   width: 68px;
   height: 184px;
   position: absolute;
-  left: 1577px;
+  left: 1576px;
   top: 261px;
   transform-origin: 0 0;
   transform: rotate(0deg) scale(-1, 1);
@@ -116,296 +74,192 @@
   width: 68px;
   height: 184px;
   position: absolute;
-  left: 1577px;
+  left: 1576px;
   top: 210px;
   transform-origin: 0 0;
   transform: rotate(0deg) scale(-1, 1);
   object-fit: cover;
 }
 .tong-1 {
-  width: 57px;
-  height: 57px;
+  width: 55px;
+  height: 56px;
   position: absolute;
-  left: 74px;
-  top: 359px;
+  left: 636px;
+  top: 341px;
   object-fit: cover;
 }
 .tong-2 {
   width: 56px;
-  height: 57px;
+  height: 56px;
   position: absolute;
-  left: 120px;
-  top: 359px;
+  left: 714px;
+  top: 341px;
   object-fit: cover;
 }
 .tong-3 {
-  width: 57px;
+  width: 55px;
   height: 57px;
   position: absolute;
-  left: 167px;
-  top: 359px;
+  left: 813px;
+  top: 332px;
   object-fit: cover;
 }
 .tong-4 {
-  width: 56px;
+  width: 55px;
   height: 57px;
   position: absolute;
-  left: 214px;
-  top: 359px;
+  left: 859px;
+  top: 332px;
   object-fit: cover;
 }
 .tong-5 {
-  width: 56px;
+  width: 55px;
   height: 57px;
   position: absolute;
-  left: 274px;
-  top: 359px;
+  left: 903px;
+  top: 332px;
   object-fit: cover;
 }
 .tong-6 {
   width: 56px;
   height: 57px;
   position: absolute;
-  left: 321px;
-  top: 359px;
+  left: 948px;
+  top: 332px;
   object-fit: cover;
 }
 .tong-7 {
-  width: 55px;
-  height: 57px;
-  position: absolute;
-  left: 370px;
-  top: 359px;
-  object-fit: cover;
-}
-.tong-8 {
   width: 57px;
   height: 57px;
   position: absolute;
-  left: 417px;
-  top: 359px;
+  left: 993px;
+  top: 332px;
+  object-fit: cover;
+}
+.tong-8 {
+  width: 56px;
+  height: 57px;
+  position: absolute;
+  left: 1038px;
+  top: 332px;
   object-fit: cover;
 }
 .tong-9 {
-  width: 55px;
-  height: 56px;
+  width: 56px;
+  height: 57px;
   position: absolute;
-  left: 502px;
-  top: 346px;
+  left: 1083px;
+  top: 332px;
   object-fit: cover;
 }
 .tong-10 {
-  width: 55px;
+  width: 57px;
   height: 57px;
   position: absolute;
-  left: 502px;
-  top: 320px;
+  left: 1128px;
+  top: 332px;
   object-fit: cover;
 }
 .tong-11 {
-  width: 56px;
-  height: 56px;
+  width: 57px;
+  height: 57px;
   position: absolute;
-  left: 582px;
-  top: 340px;
+  left: 1171px;
+  top: 332px;
   object-fit: cover;
 }
 .tong-12 {
-  width: 55px;
-  height: 57px;
+  width: 56px;
+  height: 56px;
   position: absolute;
-  left: 666px;
-  top: 336px;
+  left: 1248px;
+  top: 335px;
   object-fit: cover;
 }
 .tong-13 {
-  width: 55px;
-  height: 57px;
+  width: 56px;
+  height: 56px;
   position: absolute;
-  left: 712px;
-  top: 336px;
+  left: 1309px;
+  top: 335px;
   object-fit: cover;
 }
 .tong-14 {
-  width: 55px;
-  height: 57px;
+  width: 56px;
+  height: 55px;
   position: absolute;
-  left: 756px;
-  top: 336px;
+  left: 1409px;
+  top: 344px;
   object-fit: cover;
 }
 .tong-15 {
-  width: 56px;
+  width: 57px;
   height: 57px;
   position: absolute;
-  left: 801px;
+  left: 1513px;
   top: 336px;
   object-fit: cover;
 }
 .tong-16 {
-  width: 57px;
-  height: 57px;
+  width: 58px;
+  height: 56px;
   position: absolute;
-  left: 846px;
-  top: 336px;
+  left: 1600px;
+  top: 333px;
   object-fit: cover;
 }
 .tong-17 {
   width: 56px;
-  height: 57px;
+  height: 56px;
   position: absolute;
-  left: 891px;
-  top: 336px;
+  left: 1755px;
+  top: 333px;
   object-fit: cover;
 }
 .tong-18 {
   width: 56px;
-  height: 57px;
-  position: absolute;
-  left: 936px;
-  top: 336px;
-  object-fit: cover;
-}
-.tong-19 {
-  width: 57px;
-  height: 57px;
-  position: absolute;
-  left: 981px;
-  top: 336px;
-  object-fit: cover;
-}
-.tong-20 {
-  width: 57px;
-  height: 57px;
-  position: absolute;
-  left: 1024px;
-  top: 336px;
-  object-fit: cover;
-}
-.tong-21 {
-  width: 56px;
   height: 56px;
   position: absolute;
-  left: 1098px;
-  top: 334px;
-  object-fit: cover;
-}
-.tong-22 {
-  width: 56px;
-  height: 56px;
-  position: absolute;
-  left: 1159px;
-  top: 334px;
-  object-fit: cover;
-}
-.tong-23 {
-  width: 55px;
-  height: 56px;
-  position: absolute;
-  left: 1230px;
-  top: 333px;
-  object-fit: cover;
-}
-.tong-24 {
-  width: 57px;
-  height: 56px;
-  position: absolute;
-  left: 1308px;
-  top: 333px;
-  object-fit: cover;
-}
-.tong-25 {
-  width: 56px;
-  height: 55px;
-  position: absolute;
-  left: 1415px;
-  top: 342px;
-  object-fit: cover;
-}
-.tong-26 {
-  width: 57px;
-  height: 57px;
-  position: absolute;
-  left: 1514px;
-  top: 440px;
-  object-fit: cover;
-}
-.tong-27 {
-  width: 57px;
-  height: 57px;
-  position: absolute;
-  left: 1514px;
-  top: 390px;
-  object-fit: cover;
-}
-.tong-28 {
-  width: 57px;
-  height: 57px;
-  position: absolute;
-  left: 1514px;
-  top: 336px;
-  object-fit: cover;
-}
-.tong-29 {
-  width: 58px;
-  height: 56px;
-  position: absolute;
-  left: 1601px;
-  top: 333px;
-  object-fit: cover;
-}
-.tong-30 {
-  width: 56px;
-  height: 56px;
-  position: absolute;
-  left: 1756px;
-  top: 333px;
-  object-fit: cover;
-}
-.tong-31 {
-  width: 56px;
-  height: 56px;
-  position: absolute;
-  left: 1672px;
+  left: 1671px;
   top: 333px;
   object-fit: cover;
 }
 .green-up-1 {
-  width: 26px;
+  width: 24px;
   height: 27px;
   position: absolute;
-  left: 523px;
-  top: 212px;
+  left: 756px;
+  top: 208px;
   transform-origin: 0 0;
   transform: rotate(0deg) scale(1, 1);
   object-fit: cover;
 }
 .green-down-1 {
-  width: 26px;
+  width: 24px;
   height: 27px;
   position: absolute;
-  left: 523px;
-  top: 243px;
+  left: 756px;
+  top: 239px;
   transform-origin: 0 0;
   transform: rotate(0deg) scale(1, 1);
   object-fit: cover;
 }
 .green-up-2 {
-  width: 24px;
+  width: 26px;
   height: 27px;
   position: absolute;
-  left: 621px;
-  top: 212px;
+  left: 1239px;
+  top: 208px;
   transform-origin: 0 0;
   transform: rotate(0deg) scale(1, 1);
   object-fit: cover;
 }
 .green-down-2 {
-  width: 24px;
+  width: 26px;
   height: 27px;
   position: absolute;
-  left: 621px;
-  top: 243px;
+  left: 1239px;
+  top: 239px;
   transform-origin: 0 0;
   transform: rotate(0deg) scale(1, 1);
   object-fit: cover;
@@ -414,8 +268,8 @@
   width: 26px;
   height: 27px;
   position: absolute;
-  left: 1093px;
-  top: 212px;
+  left: 1459px;
+  top: 227px;
   transform-origin: 0 0;
   transform: rotate(0deg) scale(1, 1);
   object-fit: cover;
@@ -424,157 +278,57 @@
   width: 26px;
   height: 27px;
   position: absolute;
-  left: 1093px;
-  top: 243px;
-  transform-origin: 0 0;
-  transform: rotate(0deg) scale(1, 1);
-  object-fit: cover;
-}
-.green-up-4 {
-  width: 26px;
-  height: 24px;
-  position: absolute;
-  left: 1256px;
-  top: 165px;
-  transform-origin: 0 0;
-  transform: rotate(0deg) scale(1, 1);
-  object-fit: cover;
-}
-.green-down-4 {
-  width: 26px;
-  height: 26px;
-  position: absolute;
-  left: 1256px;
-  top: 195px;
-  transform-origin: 0 0;
-  transform: rotate(0deg) scale(1, 1);
-  object-fit: cover;
-}
-.green-up-5 {
-  width: 25px;
-  height: 24px;
-  position: absolute;
-  left: 1346px;
-  top: 165px;
-  transform-origin: 0 0;
-  transform: rotate(0deg) scale(1, 1);
-  object-fit: cover;
-}
-.green-down-5 {
-  width: 25px;
-  height: 26px;
-  position: absolute;
-  left: 1346px;
-  top: 195px;
-  transform-origin: 0 0;
-  transform: rotate(0deg) scale(1, 1);
-  object-fit: cover;
-}
-.green-up-6 {
-  width: 26px;
-  height: 27px;
-  position: absolute;
-  left: 1460px;
-  top: 227px;
-  transform-origin: 0 0;
-  transform: rotate(0deg) scale(1, 1);
-  object-fit: cover;
-}
-.green-down-6 {
-  width: 26px;
-  height: 27px;
-  position: absolute;
-  left: 1460px;
+  left: 1459px;
   top: 258px;
   transform-origin: 0 0;
   transform: rotate(0deg) scale(1, 1);
   object-fit: cover;
 }
-.green-up-7 {
+.green-up-4 {
   width: 25px;
   height: 27px;
   position: absolute;
-  left: 1556px;
+  left: 1555px;
   top: 204px;
   transform-origin: 0 0;
   transform: rotate(0deg) scale(1, 1);
   object-fit: cover;
 }
-.green-down-7 {
+.green-down-4 {
   width: 25px;
   height: 27px;
   position: absolute;
-  left: 1556px;
+  left: 1555px;
   top: 234px;
   transform-origin: 0 0;
   transform: rotate(0deg) scale(1, 1);
   object-fit: cover;
 }
-.green-up-8 {
+.green-up-5 {
   width: 24px;
   height: 27px;
   position: absolute;
-  left: 1604px;
+  left: 1603px;
   top: 243px;
   transform-origin: 0 0;
   transform: rotate(0deg) scale(1, 1);
   object-fit: cover;
 }
-.green-down-8 {
+.green-down-5 {
   width: 24px;
   height: 27px;
   position: absolute;
-  left: 1604px;
+  left: 1603px;
   top: 275px;
   transform-origin: 0 0;
   transform: rotate(0deg) scale(1, 1);
-  object-fit: cover;
-}
-.bupum-red-1 {
-  width: 47px;
-  height: 39px;
-  position: absolute;
-  left: 188px;
-  top: 420px;
-  object-fit: cover;
-}
-.bupum-green-1 {
-  width: 37px;
-  height: 37px;
-  position: absolute;
-  left: 194px;
-  top: 421px;
-  object-fit: cover;
-}
-.bupum-yellow-1 {
-  width: 40px;
-  height: 36px;
-  position: absolute;
-  left: 192px;
-  top: 422px;
-  object-fit: cover;
-}
-.cap-1 {
-  width: 113px;
-  height: 102px;
-  position: absolute;
-  left: 1280px;
-  top: 210px;
-  object-fit: cover;
-}
-.big-red-pen {
-  width: 143px;
-  height: 78px;
-  position: absolute;
-  left: 1628px;
-  top: 96px;
   object-fit: cover;
 }
 .hose {
   width: 121px;
   height: 83px;
   position: absolute;
-  left: 1382px;
+  left: 1376px;
   top: 313px;
   object-fit: cover;
 }
@@ -582,79 +336,79 @@
   width: 76px;
   height: 135px;
   position: absolute;
-  left: 726px;
-  top: 198px;
+  left: 873px;
+  top: 194px;
   object-fit: cover;
 }
 .lamp-green-1 {
   width: 88px;
   height: 88px;
   position: absolute;
-  left: 720px;
-  top: 203px;
+  left: 867px;
+  top: 199px;
   object-fit: cover;
 }
 .pen-rol-1 {
   width: 48px;
   height: 39px;
   position: absolute;
-  left: 741px;
-  top: 290px;
+  left: 888px;
+  top: 286px;
   object-fit: cover;
 }
 .lamp-red-2 {
   width: 76px;
   height: 135px;
   position: absolute;
-  left: 832px;
-  top: 198px;
+  left: 979px;
+  top: 194px;
   object-fit: cover;
 }
 .lamp-green-2 {
   width: 88px;
   height: 88px;
   position: absolute;
-  left: 826px;
-  top: 203px;
+  left: 973px;
+  top: 199px;
   object-fit: cover;
 }
 .pen-rol-2 {
   width: 47px;
   height: 39px;
   position: absolute;
-  left: 846px;
-  top: 290px;
+  left: 993px;
+  top: 286px;
   object-fit: cover;
 }
 .lamp-red-3 {
   width: 77px;
   height: 135px;
   position: absolute;
-  left: 936px;
-  top: 198px;
+  left: 1083px;
+  top: 194px;
   object-fit: cover;
 }
 .lamp-green-3 {
   width: 88px;
   height: 88px;
   position: absolute;
-  left: 932px;
-  top: 203px;
+  left: 1079px;
+  top: 199px;
   object-fit: cover;
 }
 .pen-rol-3 {
   width: 46px;
   height: 39px;
   position: absolute;
-  left: 952px;
-  top: 290px;
+  left: 1099px;
+  top: 286px;
   object-fit: cover;
 }
 .lamp-red-4 {
   width: 78px;
   height: 133px;
   position: absolute;
-  left: 1400px;
+  left: 1394px;
   top: 209px;
   object-fit: cover;
 }
@@ -662,175 +416,135 @@
   width: 88px;
   height: 89px;
   position: absolute;
-  left: 1397px;
+  left: 1391px;
   top: 228px;
   object-fit: cover;
 }
 .moter-red-1 {
-  width: 56px;
+  width: 57px;
   height: 42px;
   position: absolute;
-  left: 392px;
-  top: 422px;
+  left: 643px;
+  top: 420px;
   object-fit: cover;
 }
 .moter-green-1 {
-  width: 41px;
+  width: 42px;
   height: 27px;
   position: absolute;
-  left: 399px;
-  top: 426px;
+  left: 649px;
+  top: 424px;
   object-fit: cover;
 }
 .moter-red-2 {
   width: 57px;
-  height: 42px;
-  position: absolute;
-  left: 508px;
-  top: 422px;
-  object-fit: cover;
-}
-.moter-green-2 {
-  width: 42px;
-  height: 27px;
-  position: absolute;
-  left: 514px;
-  top: 426px;
-  object-fit: cover;
-}
-.moter-red-3 {
-  width: 57px;
   height: 39px;
   position: absolute;
-  left: 580px;
+  left: 713px;
   top: 416px;
   object-fit: cover;
 }
-.moter-green-3 {
+.moter-green-2 {
   width: 41px;
   height: 27px;
   position: absolute;
-  left: 587px;
+  left: 720px;
   top: 420px;
   object-fit: cover;
 }
-.moter-red-4 {
+.moter-red-3 {
   width: 56px;
   height: 40px;
   position: absolute;
-  left: 674px;
-  top: 418px;
+  left: 812px;
+  top: 419px;
   object-fit: cover;
 }
-.moter-green-4 {
+.moter-green-3 {
   width: 39px;
   height: 27px;
   position: absolute;
-  left: 682px;
-  top: 422px;
+  left: 820px;
+  top: 423px;
   object-fit: cover;
 }
-.moter-red-5 {
+.moter-red-4 {
   width: 57px;
   height: 40px;
   position: absolute;
-  left: 736px;
-  top: 418px;
+  left: 878px;
+  top: 419px;
   object-fit: cover;
 }
-.moter-green-5 {
+.moter-green-4 {
   width: 41px;
   height: 27px;
   position: absolute;
-  left: 743px;
-  top: 422px;
+  left: 885px;
+  top: 423px;
   object-fit: cover;
 }
-.moter-red-6 {
+.moter-red-5 {
   width: 55px;
   height: 40px;
   position: absolute;
-  left: 932px;
-  top: 418px;
+  left: 1073px;
+  top: 419px;
+  object-fit: cover;
+}
+.moter-green-5 {
+  width: 42px;
+  height: 27px;
+  position: absolute;
+  left: 1079px;
+  top: 423px;
+  object-fit: cover;
+}
+.moter-red-6 {
+  width: 56px;
+  height: 40px;
+  position: absolute;
+  left: 1143px;
+  top: 419px;
   object-fit: cover;
 }
 .moter-green-6 {
   width: 42px;
   height: 27px;
   position: absolute;
-  left: 938px;
-  top: 422px;
+  left: 1149px;
+  top: 423px;
   object-fit: cover;
 }
 .moter-red-7 {
   width: 56px;
-  height: 40px;
+  height: 39px;
   position: absolute;
-  left: 996px;
-  top: 418px;
+  left: 1248px;
+  top: 416px;
   object-fit: cover;
 }
 .moter-green-7 {
-  width: 42px;
+  width: 41px;
   height: 27px;
   position: absolute;
-  left: 1002px;
-  top: 422px;
+  left: 1254px;
+  top: 420px;
   object-fit: cover;
 }
 .moter-red-8 {
   width: 56px;
   height: 39px;
   position: absolute;
-  left: 1098px;
+  left: 1308px;
   top: 416px;
   object-fit: cover;
 }
 .moter-green-8 {
-  width: 41px;
-  height: 27px;
-  position: absolute;
-  left: 1104px;
-  top: 420px;
-  object-fit: cover;
-}
-.moter-red-9 {
-  width: 56px;
-  height: 39px;
-  position: absolute;
-  left: 1158px;
-  top: 416px;
-  object-fit: cover;
-}
-.moter-green-9 {
   width: 42px;
   height: 27px;
   position: absolute;
-  left: 1164px;
-  top: 420px;
-  object-fit: cover;
-}
-.bupum-red-2 {
-  width: 46px;
-  height: 38px;
-  position: absolute;
-  left: 1237px;
-  top: 418px;
-  object-fit: cover;
-}
-.bupum-green-2 {
-  width: 38px;
-  height: 37px;
-  position: absolute;
-  left: 1242px;
-  top: 418px;
-  object-fit: cover;
-}
-.bupum-yellow-2 {
-  width: 43px;
-  height: 35px;
-  position: absolute;
-  left: 1239px;
+  left: 1314px;
   top: 420px;
   object-fit: cover;
 }
@@ -838,7 +552,7 @@
   width: 46px;
   height: 38px;
   position: absolute;
-  left: 1601px;
+  left: 1600px;
   top: 418px;
   object-fit: cover;
 }
@@ -846,7 +560,7 @@
   width: 38px;
   height: 37px;
   position: absolute;
-  left: 1606px;
+  left: 1605px;
   top: 418px;
   object-fit: cover;
 }
@@ -854,71 +568,39 @@
   width: 41px;
   height: 35px;
   position: absolute;
-  left: 1604px;
+  left: 1603px;
   top: 420px;
+  object-fit: cover;
+}
+.moter-red-9 {
+  width: 55px;
+  height: 42px;
+  position: absolute;
+  left: 1630px;
+  top: 422px;
+  object-fit: cover;
+}
+.moter-green-9 {
+  width: 40px;
+  height: 27px;
+  position: absolute;
+  left: 1636px;
+  top: 426px;
   object-fit: cover;
 }
 .moter-red-10 {
   width: 56px;
   height: 42px;
   position: absolute;
-  left: 1267px;
+  left: 1680px;
   top: 422px;
   object-fit: cover;
 }
 .moter-green-10 {
-  width: 41px;
-  height: 27px;
-  position: absolute;
-  left: 1274px;
-  top: 426px;
-  object-fit: cover;
-}
-.moter-red-11 {
-  width: 57px;
-  height: 42px;
-  position: absolute;
-  left: 1319px;
-  top: 422px;
-  object-fit: cover;
-}
-.moter-green-11 {
-  width: 41px;
-  height: 27px;
-  position: absolute;
-  left: 1326px;
-  top: 426px;
-  object-fit: cover;
-}
-.moter-red-12 {
-  width: 55px;
-  height: 42px;
-  position: absolute;
-  left: 1631px;
-  top: 422px;
-  object-fit: cover;
-}
-.moter-green-12 {
-  width: 40px;
-  height: 27px;
-  position: absolute;
-  left: 1637px;
-  top: 426px;
-  object-fit: cover;
-}
-.moter-red-13 {
-  width: 56px;
-  height: 42px;
-  position: absolute;
-  left: 1681px;
-  top: 422px;
-  object-fit: cover;
-}
-.moter-green-13 {
   width: 39px;
   height: 27px;
   position: absolute;
-  left: 1690px;
+  left: 1688px;
   top: 426px;
   object-fit: cover;
 }
@@ -927,167 +609,101 @@
   border-style: solid;
   border-color: #000000;
   border-width: 0.5px;
-  width: 13px;
+  width: 10px;
   height: 123px;
   position: absolute;
-  left: 558px;
-  top: 287px;
+  left: 789px;
+  top: 283px;
 }
 .door-yellow-1 {
   background: #faff00;
   border-style: solid;
   border-color: #000000;
   border-width: 0.5px;
-  width: 13px;
+  width: 10px;
   height: 121px;
   position: absolute;
-  left: 558px;
-  top: 241px;
+  left: 789px;
+  top: 237px;
 }
 .door-red-1 {
   background: #ff0000;
   border-style: solid;
   border-color: #000000;
   border-width: 0.5px;
-  width: 13px;
+  width: 10px;
   height: 122px;
   position: absolute;
-  left: 558px;
-  top: 195px;
+  left: 789px;
+  top: 191px;
 }
 .door-green-2 {
   background: #189f0d;
   border-style: solid;
   border-color: #000000;
   border-width: 0.5px;
-  width: 10px;
+  width: 11px;
   height: 123px;
   position: absolute;
-  left: 653px;
-  top: 287px;
+  left: 1223px;
+  top: 283px;
 }
 .door-yellow-2 {
   background: #faff00;
   border-style: solid;
   border-color: #000000;
   border-width: 0.5px;
-  width: 10px;
+  width: 11px;
   height: 121px;
   position: absolute;
-  left: 653px;
-  top: 241px;
+  left: 1223px;
+  top: 237px;
 }
 .door-red-2 {
   background: #ff0000;
   border-style: solid;
   border-color: #000000;
   border-width: 0.5px;
-  width: 10px;
+  width: 11px;
   height: 122px;
   position: absolute;
-  left: 653px;
-  top: 195px;
+  left: 1223px;
+  top: 191px;
 }
 .door-green-3 {
   background: #189f0d;
   border-style: solid;
   border-color: #000000;
   border-width: 0.5px;
-  width: 11px;
-  height: 123px;
+  width: 12px;
+  height: 112px;
   position: absolute;
-  left: 1073px;
-  top: 287px;
+  left: 1372px;
+  top: 271px;
 }
 .door-yellow-3 {
   background: #faff00;
   border-style: solid;
   border-color: #000000;
   border-width: 0.5px;
-  width: 11px;
-  height: 121px;
+  width: 12px;
+  height: 109px;
   position: absolute;
-  left: 1073px;
-  top: 241px;
+  left: 1372px;
+  top: 230px;
 }
 .door-red-3 {
   background: #ff0000;
   border-style: solid;
   border-color: #000000;
   border-width: 0.5px;
-  width: 11px;
-  height: 122px;
+  width: 12px;
+  height: 111px;
   position: absolute;
-  left: 1073px;
-  top: 195px;
+  left: 1372px;
+  top: 187px;
 }
 .door-green-4 {
-  background: #189f0d;
-  border-style: solid;
-  border-color: #000000;
-  border-width: 0.5px;
-  width: 11px;
-  height: 112px;
-  position: absolute;
-  left: 1283px;
-  top: 271px;
-}
-.door-yellow-4 {
-  background: #faff00;
-  border-style: solid;
-  border-color: #000000;
-  border-width: 0.5px;
-  width: 11px;
-  height: 109px;
-  position: absolute;
-  left: 1283px;
-  top: 230px;
-}
-.door-red-4 {
-  background: #ff0000;
-  border-style: solid;
-  border-color: #000000;
-  border-width: 0.5px;
-  width: 11px;
-  height: 111px;
-  position: absolute;
-  left: 1283px;
-  top: 187px;
-}
-.door-green-5 {
-  background: #189f0d;
-  border-style: solid;
-  border-color: #000000;
-  border-width: 0.5px;
-  width: 12px;
-  height: 112px;
-  position: absolute;
-  left: 1380px;
-  top: 271px;
-}
-.door-yellow-5 {
-  background: #faff00;
-  border-style: solid;
-  border-color: #000000;
-  border-width: 0.5px;
-  width: 12px;
-  height: 109px;
-  position: absolute;
-  left: 1380px;
-  top: 230px;
-}
-.door-red-5 {
-  background: #ff0000;
-  border-style: solid;
-  border-color: #000000;
-  border-width: 0.5px;
-  width: 12px;
-  height: 111px;
-  position: absolute;
-  left: 1380px;
-  top: 187px;
-}
-.door-green-6 {
   background: #189f0d;
   border-style: solid;
   border-color: #000000;
@@ -1095,10 +711,10 @@
   width: 9px;
   height: 103px;
   position: absolute;
-  left: 1491px;
+  left: 1490px;
   top: 291px;
 }
-.door-yellow-6 {
+.door-yellow-4 {
   background: #faff00;
   border-style: solid;
   border-color: #000000;
@@ -1106,10 +722,10 @@
   width: 9px;
   height: 99px;
   position: absolute;
-  left: 1491px;
+  left: 1490px;
   top: 254px;
 }
-.door-red-6 {
+.door-red-4 {
   background: #ff0000;
   border-style: solid;
   border-color: #000000;
@@ -1117,10 +733,10 @@
   width: 9px;
   height: 103px;
   position: absolute;
-  left: 1491px;
+  left: 1490px;
   top: 214px;
 }
-.door-green-7 {
+.door-green-5 {
   background: #189f0d;
   border-style: solid;
   border-color: #000000;
@@ -1128,10 +744,10 @@
   width: 10px;
   height: 111px;
   position: absolute;
-  left: 1585px;
+  left: 1584px;
   top: 282px;
 }
-.door-yellow-7 {
+.door-yellow-5 {
   background: #faff00;
   border-style: solid;
   border-color: #000000;
@@ -1139,10 +755,10 @@
   width: 10px;
   height: 109px;
   position: absolute;
-  left: 1585px;
+  left: 1584px;
   top: 239px;
 }
-.door-red-7 {
+.door-red-5 {
   background: #ff0000;
   border-style: solid;
   border-color: #000000;
@@ -1150,190 +766,118 @@
   width: 10px;
   height: 110px;
   position: absolute;
-  left: 1585px;
+  left: 1584px;
   top: 198px;
 }
 .yello-left-1 {
-  width: 18px;
-  height: 22px;
+  width: 20px;
+  height: 24px;
   position: absolute;
-  left: 192px;
-  top: 406px;
-  object-fit: cover;
-}
-.yello-right-1 {
-  width: 21px;
-  height: 22px;
-  position: absolute;
-  left: 210px;
-  top: 406px;
+  left: 659px;
+  top: 454px;
   object-fit: cover;
 }
 .yello-left-2 {
-  width: 19px;
-  height: 24px;
+  width: 20px;
+  height: 23px;
   position: absolute;
-  left: 408px;
-  top: 456px;
+  left: 727px;
+  top: 454px;
   object-fit: cover;
 }
 .yello-left-3 {
-  width: 20px;
-  height: 24px;
-  position: absolute;
-  left: 524px;
-  top: 456px;
-  object-fit: cover;
-}
-.yello-left-4 {
-  width: 20px;
-  height: 23px;
-  position: absolute;
-  left: 594px;
-  top: 454px;
-  object-fit: cover;
-}
-.yello-left-5 {
   width: 21px;
   height: 23px;
   position: absolute;
-  left: 691px;
-  top: 454px;
+  left: 829px;
+  top: 455px;
   object-fit: cover;
 }
-.yello-left-6 {
+.yello-left-4 {
   width: 19px;
   height: 23px;
   position: absolute;
-  left: 755px;
-  top: 454px;
+  left: 897px;
+  top: 455px;
   object-fit: cover;
 }
-.yello-left-7 {
+.yello-left-5 {
   width: 20px;
   height: 23px;
   position: absolute;
-  left: 947px;
-  top: 454px;
+  left: 1088px;
+  top: 455px;
+  object-fit: cover;
+}
+.yello-left-6 {
+  width: 20px;
+  height: 23px;
+  position: absolute;
+  left: 1161px;
+  top: 455px;
+  object-fit: cover;
+}
+.yello-left-7 {
+  width: 18px;
+  height: 22px;
+  position: absolute;
+  left: 1265px;
+  top: 450px;
   object-fit: cover;
 }
 .yello-left-8 {
   width: 20px;
-  height: 23px;
+  height: 22px;
   position: absolute;
-  left: 1014px;
-  top: 454px;
+  left: 1326px;
+  top: 450px;
   object-fit: cover;
 }
 .yello-left-9 {
-  width: 18px;
-  height: 22px;
-  position: absolute;
-  left: 1115px;
-  top: 450px;
-  object-fit: cover;
-}
-.yello-left-10 {
-  width: 20px;
-  height: 22px;
-  position: absolute;
-  left: 1176px;
-  top: 450px;
-  object-fit: cover;
-}
-.yello-left-11 {
-  width: 21px;
-  height: 23px;
-  position: absolute;
-  left: 1268px;
-  top: 458px;
-  object-fit: cover;
-}
-.yello-left-12 {
-  width: 21px;
-  height: 23px;
-  position: absolute;
-  left: 1328px;
-  top: 458px;
-  object-fit: cover;
-}
-.yello-left-13 {
   width: 19px;
   height: 22px;
   position: absolute;
-  left: 1245px;
+  left: 1605px;
   top: 390px;
+  object-fit: cover;
+}
+.yello-right-1 {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 1624px;
+  top: 390px;
+  object-fit: cover;
+}
+.yello-left-10 {
+  width: 19px;
+  height: 23px;
+  position: absolute;
+  left: 1632px;
+  top: 458px;
+  object-fit: cover;
+}
+.yello-left-11 {
+  width: 19px;
+  height: 23px;
+  position: absolute;
+  left: 1684px;
+  top: 458px;
   object-fit: cover;
 }
 .yello-right-2 {
   width: 21px;
-  height: 22px;
-  position: absolute;
-  left: 1264px;
-  top: 390px;
-  object-fit: cover;
-}
-.yello-left-14 {
-  width: 19px;
-  height: 22px;
-  position: absolute;
-  left: 1606px;
-  top: 390px;
-  object-fit: cover;
-}
-.yello-right-3 {
-  width: 22px;
-  height: 22px;
-  position: absolute;
-  left: 1625px;
-  top: 390px;
-  object-fit: cover;
-}
-.yello-left-15 {
-  width: 19px;
   height: 23px;
   position: absolute;
-  left: 1633px;
-  top: 458px;
-  object-fit: cover;
-}
-.yello-left-16 {
-  width: 19px;
-  height: 23px;
-  position: absolute;
-  left: 1685px;
-  top: 458px;
-  object-fit: cover;
-}
-.yello-right-4 {
-  width: 21px;
-  height: 23px;
-  position: absolute;
-  left: 1704px;
+  left: 1703px;
   top: 458px;
   object-fit: cover;
 }
 .flu-1 {
-  width: 260px;
-  height: 25px;
-  position: absolute;
-  left: 197px;
-  top: 401px;
-  object-fit: cover;
-}
-.flu-2 {
-  width: 115px;
-  height: 19px;
-  position: absolute;
-  left: 1280px;
-  top: 377px;
-  object-fit: cover;
-}
-.flu-3 {
   width: 217px;
   height: 19px;
   position: absolute;
-  left: 1606px;
+  left: 1605px;
   top: 374px;
   object-fit: cover;
 }
@@ -1341,64 +885,64 @@
   width: 27px;
   height: 25px;
   position: absolute;
-  left: 656px;
-  top: 372px;
+  left: 803px;
+  top: 368px;
   object-fit: cover;
 }
 .sensor-green-1 {
   width: 25px;
   height: 31px;
   position: absolute;
-  left: 658px;
-  top: 368px;
+  left: 805px;
+  top: 364px;
   object-fit: cover;
 }
 .sensor-red-2 {
   width: 27px;
   height: 25px;
   position: absolute;
-  left: 702px;
-  top: 372px;
+  left: 849px;
+  top: 368px;
   object-fit: cover;
 }
 .sensor-green-2 {
   width: 26px;
   height: 31px;
   position: absolute;
-  left: 703px;
-  top: 368px;
+  left: 850px;
+  top: 364px;
   object-fit: cover;
 }
 .sensor-red-3 {
   width: 27px;
   height: 25px;
   position: absolute;
-  left: 837px;
-  top: 372px;
+  left: 984px;
+  top: 368px;
   object-fit: cover;
 }
 .sensor-green-3 {
   width: 26px;
   height: 31px;
   position: absolute;
-  left: 838px;
-  top: 368px;
+  left: 985px;
+  top: 364px;
   object-fit: cover;
 }
 .sensor-red-4 {
   width: 27px;
   height: 25px;
   position: absolute;
-  left: 1016px;
-  top: 372px;
+  left: 1163px;
+  top: 368px;
   object-fit: cover;
 }
 .sensor-green-4 {
   width: 26px;
   height: 31px;
   position: absolute;
-  left: 1017px;
-  top: 368px;
+  left: 1164px;
+  top: 364px;
   object-fit: cover;
 }
 .process-data-box {
@@ -1406,7 +950,7 @@
   border-style: solid;
   border-color: #000000;
   border-width: 2px;
-  width: 1011px;
+  width: 930px;
   height: 183px;
   position: absolute;
   left: 19px;
@@ -1555,16 +1099,40 @@
   left: 208px;
   top: 722px;
 }
+.block-2 {
+  background: #666666;
+  border-radius: 1px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  width: 78px;
+  height: 51px;
+  position: absolute;
+  left: 289px;
+  top: 664px;
+}
+.block-3 {
+  background: #666666;
+  border-radius: 1px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  width: 78px;
+  height: 51px;
+  position: absolute;
+  left: 449px;
+  top: 664px;
+}
 .tem-sp {
   background: #ffffff;
   border-radius: 1px;
   border-style: solid;
   border-color: #000000;
   border-width: 1px;
-  width: 238px;
+  width: 78px;
   height: 24px;
   position: absolute;
-  left: 289px;
+  left: 369px;
   top: 664px;
 }
 .tem-pv {
@@ -1573,10 +1141,10 @@
   border-style: solid;
   border-color: #000000;
   border-width: 1px;
-  width: 238px;
+  width: 78px;
   height: 24px;
   position: absolute;
-  left: 289px;
+  left: 369px;
   top: 691px;
 }
 .tem-3-sp {
@@ -1651,40 +1219,16 @@
   left: 449px;
   top: 749px;
 }
-.exit-sp {
-  background: #ffffff;
-  border-radius: 1px;
-  border-style: solid;
-  border-color: #000000;
-  border-width: 1px;
-  width: 78px;
-  height: 24px;
-  position: absolute;
-  left: 542px;
-  top: 664px;
-}
-.exit-pv {
-  background: #ffffff;
-  border-radius: 1px;
-  border-style: solid;
-  border-color: #000000;
-  border-width: 1px;
-  width: 78px;
-  height: 24px;
-  position: absolute;
-  left: 542px;
-  top: 691px;
-}
-.block-2 {
+.block-4 {
   background: #666666;
   border-radius: 1px;
   border-style: solid;
   border-color: #000000;
   border-width: 1px;
-  width: 158px;
+  width: 78px;
   height: 51px;
   position: absolute;
-  left: 542px;
+  left: 541px;
   top: 722px;
 }
 .air-sp {
@@ -1696,7 +1240,7 @@
   width: 78px;
   height: 24px;
   position: absolute;
-  left: 622px;
+  left: 541px;
   top: 664px;
 }
 .air-pv {
@@ -1708,7 +1252,7 @@
   width: 78px;
   height: 24px;
   position: absolute;
-  left: 622px;
+  left: 541px;
   top: 691px;
 }
 .rins-sp {
@@ -1720,7 +1264,7 @@
   width: 78px;
   height: 24px;
   position: absolute;
-  left: 702px;
+  left: 621px;
   top: 664px;
 }
 .rins-pv {
@@ -1732,7 +1276,7 @@
   width: 78px;
   height: 24px;
   position: absolute;
-  left: 702px;
+  left: 621px;
   top: 691px;
 }
 .rins-tem-sp {
@@ -1744,7 +1288,7 @@
   width: 78px;
   height: 24px;
   position: absolute;
-  left: 702px;
+  left: 621px;
   top: 722px;
 }
 .rins-tem-pv {
@@ -1756,7 +1300,7 @@
   width: 78px;
   height: 24px;
   position: absolute;
-  left: 702px;
+  left: 621px;
   top: 749px;
 }
 .spray-sp {
@@ -1768,7 +1312,7 @@
   width: 78px;
   height: 24px;
   position: absolute;
-  left: 782px;
+  left: 701px;
   top: 664px;
 }
 .spray-pv {
@@ -1780,10 +1324,10 @@
   width: 78px;
   height: 24px;
   position: absolute;
-  left: 782px;
+  left: 701px;
   top: 691px;
 }
-.block-3 {
+.block-5 {
   background: #666666;
   border-radius: 1px;
   border-style: solid;
@@ -1792,7 +1336,7 @@
   width: 78px;
   height: 51px;
   position: absolute;
-  left: 782px;
+  left: 701px;
   top: 722px;
 }
 .drain-sp {
@@ -1804,7 +1348,7 @@
   width: 78px;
   height: 24px;
   position: absolute;
-  left: 862px;
+  left: 781px;
   top: 664px;
 }
 .drain-pv {
@@ -1816,7 +1360,7 @@
   width: 78px;
   height: 24px;
   position: absolute;
-  left: 862px;
+  left: 781px;
   top: 691px;
 }
 .drain-diping-tem-sp {
@@ -1825,10 +1369,10 @@
   border-style: solid;
   border-color: #000000;
   border-width: 1px;
-  width: 158px;
+  width: 77px;
   height: 24px;
   position: absolute;
-  left: 862px;
+  left: 823px;
   top: 722px;
 }
 .drain-diping-tem-pv {
@@ -1837,10 +1381,10 @@
   border-style: solid;
   border-color: #000000;
   border-width: 1px;
-  width: 158px;
+  width: 77px;
   height: 24px;
   position: absolute;
-  left: 862px;
+  left: 823px;
   top: 749px;
 }
 .diping-sp {
@@ -1852,7 +1396,7 @@
   width: 78px;
   height: 24px;
   position: absolute;
-  left: 942px;
+  left: 861px;
   top: 664px;
 }
 .diping-pv {
@@ -1864,7 +1408,7 @@
   width: 78px;
   height: 24px;
   position: absolute;
-  left: 942px;
+  left: 861px;
   top: 691px;
 }
 .chim-box {
@@ -1885,7 +1429,7 @@
   border-style: solid;
   border-color: #000000;
   border-width: 1px;
-  width: 488px;
+  width: 408px;
   height: 53px;
   position: absolute;
   left: 536px;
@@ -2018,7 +1562,7 @@
   width: 78px;
   height: 28px;
   position: absolute;
-  left: 542px;
+  left: 541px;
   top: 626px;
 }
 .hit-mini-text5 {
@@ -2028,9 +1572,9 @@
   font-size: 10px;
   font-weight: 400;
   position: absolute;
-  left: 551px;
+  left: 545px;
   top: 628px;
-  width: 60px;
+  width: 70px;
 }
 .hit-mini-box6 {
   background: #000000;
@@ -2038,19 +1582,19 @@
   width: 78px;
   height: 28px;
   position: absolute;
-  left: 622px;
+  left: 621px;
   top: 626px;
 }
 .hit-mini-text6 {
   color: #ffffff;
-  text-align: center;
+  text-align: left;
   font-family: "Inter-Regular", sans-serif;
   font-size: 10px;
   font-weight: 400;
   position: absolute;
-  left: 626px;
-  top: 628px;
-  width: 70px;
+  left: 650px;
+  top: 634px;
+  width: 24px;
 }
 .hit-mini-box7 {
   background: #000000;
@@ -2058,7 +1602,7 @@
   width: 78px;
   height: 28px;
   position: absolute;
-  left: 702px;
+  left: 701px;
   top: 626px;
 }
 .hit-mini-text7 {
@@ -2068,9 +1612,9 @@
   font-size: 10px;
   font-weight: 400;
   position: absolute;
-  left: 731px;
+  left: 721px;
   top: 634px;
-  width: 24px;
+  width: 45px;
 }
 .hit-mini-box8 {
   background: #000000;
@@ -2078,7 +1622,7 @@
   width: 78px;
   height: 28px;
   position: absolute;
-  left: 782px;
+  left: 781px;
   top: 626px;
 }
 .hit-mini-text8 {
@@ -2088,9 +1632,9 @@
   font-size: 10px;
   font-weight: 400;
   position: absolute;
-  left: 802px;
+  left: 805px;
   top: 634px;
-  width: 45px;
+  width: 36px;
 }
 .hit-mini-box9 {
   background: #000000;
@@ -2098,7 +1642,7 @@
   width: 78px;
   height: 28px;
   position: absolute;
-  left: 862px;
+  left: 861px;
   top: 626px;
 }
 .hit-mini-text9 {
@@ -2108,27 +1652,7 @@
   font-size: 10px;
   font-weight: 400;
   position: absolute;
-  left: 886px;
-  top: 634px;
-  width: 36px;
-}
-.hit-mini-box10 {
-  background: #000000;
-  border-radius: 2px;
-  width: 78px;
-  height: 28px;
-  position: absolute;
-  left: 942px;
-  top: 626px;
-}
-.hit-mini-text10 {
-  color: #ffffff;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 10px;
-  font-weight: 400;
-  position: absolute;
-  left: 971px;
+  left: 890px;
   top: 633px;
   width: 25px;
 }
@@ -2149,17 +1673,26 @@
   font-size: 14px;
   font-weight: 700;
   position: absolute;
-  left: 763px;
-  top: 607px;
+  left: 756px;
+  top: 606px;
 }
 .frame-1 {
   border-style: solid;
   border-color: #000000;
   border-width: 1px;
-  width: 858px;
+  width: 943px;
   height: 262px;
   position: absolute;
-  left: 1043px;
+  left: 958px;
   top: 556px;
   overflow: hidden;
 }
+.rectangle-1 {
+  background: #d9d9d9;
+  width: 510px;
+  height: 104px;
+  position: absolute;
+  left: 85px;
+  top: 368px;
+}
+

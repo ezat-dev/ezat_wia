@@ -21,14 +21,14 @@
       'Malgun Gothic', sans-serif;
     }
 
-    main {
+     /* main {
       width: 100vw;
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
       background-color: #e5e5e5;
-    }
+    }  */
 
     .site__header {
       background: #123478;

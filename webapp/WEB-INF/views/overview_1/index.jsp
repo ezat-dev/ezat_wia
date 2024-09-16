@@ -462,11 +462,11 @@
     <img class="tong-21" src="/DHT/image/overview_1/tong-210.png" />
     <img class="tong-22" src="/DHT/image/overview_1/tong-220.png" />
     <img class="tong-23" src="/DHT/image/overview_1/tong-230.png" />
-    <img class="tong-24" src="/DHT/image/overview_1/tong-240.png" />
-    <img class="tong-25" src="/DHT/image/overview_1/tong-250.png" />
+    <!-- <img class="tong-24" src="/DHT/image/overview_1/tong-240.png" />
+    <img class="tong-25" src="/DHT/image/overview_1/tong-250.png" /> -->
     <img class="tong-26" src="/DHT/image/overview_1/tong-260.png" />
     <img class="tong-27" src="/DHT/image/overview_1/tong-270.png" />
-    <img class="tong-28" src="tong-280.png" />
+    <img class="tong-28" src="/DHT/image/overview_1/tong-280.png" />
     <div class="frame-1"></div>
   </div>
 </div>
