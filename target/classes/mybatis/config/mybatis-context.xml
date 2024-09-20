@@ -4,10 +4,12 @@
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 <typeAliases>
-	<package name="com.ace.domain"/>
+	<package name="com.wia.domain"/>
 </typeAliases>
-  <mappers> 
-   <mapper resource="mybatis/mapper/recipe.xml"/>
+  <mappers>
    <mapper resource="mybatis/mapper/alarmList.xml"/>
+   <mapper resource="mybatis/mapper/alarmCcf.xml"/>
+   <mapper resource="mybatis/mapper/trendCcf.xml"/>
+   <mapper resource="mybatis/mapper/trendCm.xml"/>
   </mappers>
 </configuration>

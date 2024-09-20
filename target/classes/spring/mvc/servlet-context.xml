@@ -28,7 +28,7 @@
 	<bean id="loginInterceptor" class="com.ace.interceptor.LoginInterceptor"/>
 	<bean id="xssInterceptor" class="com.ace.interceptor.XssInterceptor"/>
  -->	
-	<context:component-scan base-package="com.ace.controller"/>
+	<context:component-scan base-package="com.wia.controller"/>
 
 	<bean name="multipartResolver"
 	 class="org.springframework.web.multipart.commons.CommonsMultipartResolver"

@@ -139,33 +139,33 @@
       </div>
       <nav>
         <ul class="menu menu1">
-          <li><a href="/DHT/overview_2" data-page="overview_2">공통운용 현황</a></li>
-          <li><a href="/DHT/control_3" data-page="control_3">제어 화면</a></li>
-          <li><a href="/DHT/trend1" data-page="trend1">트렌드</a></li>
-          <li><a href="/DHT/alarm_history" data-page="alarm_history">알람 내역</a></li>
-          <li><a href="/DHT/alarm_list" data-page="alarm_list">알람</a></li>
-          <li><a href="/DHT/alarm_ranking" data-page="alarm_ranking">알람 랭킹</a></li>
-          <li><a href="/DHT/overview_2_1" data-page="overview_2_1">처리품 데이터</a></li>
-          <li><a href="/DHT/product_cycle_cm" data-page="product_cycle_cm">처리품 싸이클</a></li>
-           <li><a href="/DHT/tic_cm" data-page="tic_cm">온도 조절계</a></li>
-          <li><a href="/DHT/auto_con" data-page="auto_con">자동운전 조건</a></li>
-          <li><a href="/DHT/io_monitor" data-page="io_monitoring">IO 모니터링</a></li>
-          <li><a href="/DHT/overview_status" data-page="overview_status">전체 현황</a></li>
+          <li><a href="/DHT/overviewCm" data-page="overviewCm">공통운용 현황</a></li>
+          <li><a href="/DHT/controlCm" data-page="controlCm">제어 화면</a></li>
+          <li><a href="/DHT/trendCm" data-page="trendCm">트렌드</a></li>
+          <li><a href="/DHT/alarmHistoryCm" data-page="alarmHistoryCm">알람 내역</a></li>
+          <li><a href="/DHT/alarmListCm1" data-page="alarmListCm1">알람</a></li>
+          <li><a href="/DHT/alarmRankingCm" data-page="alarmRankingCm">알람 랭킹</a></li>
+          <li><a href="/DHT/overviewDataCm" data-page="overviewDataCm">처리품 데이터</a></li>
+          <li><a href="/DHT/productCycleCm" data-page="productCycleCm">처리품 싸이클</a></li>
+           <li><a href="/DHT/ticCm" data-page="ticCm">온도 조절계</a></li>
+          <li><a href="/DHT/autoConCm" data-page="autoConCm">자동운전 조건</a></li>
+          <li><a href="/DHT/ioMonitorCm1" data-page="ioMonitorCm1">IO 모니터링</a></li>
+          <li><a href="/DHT/overviewStatusAll" data-page="overviewStatusAll">전체 현황</a></li>
          
         </ul>
         <ul class="menu menu2 hidden">
-          <li><a href="/DHT/overview_1" data-page="overview_1">연속운용 현황</a></li>
-          <li><a href="/DHT/control_1" data-page="control_1">제어 화면</a></li>
-          <li><a href="/DHT/trend2" data-page="trend2">트렌드</a></li>
-          <li><a href="/DHT/alarm_history2" data-page="alarm_history2">알람 내역</a></li>
-          <li><a href="/DHT/alarm_list" data-page="alarm_list2">알람</a></li>
-          <li><a href="/DHT/alarm_ranking2" data-page="alarm_ranking2">알람 랭킹</a></li>
-          <li><a href="/DHT/overview_1_1" data-page="overview_1_1">처리품 데이터</a></li>
-          <li><a href="/DHT/product_cycle" data-page="product_cycle">처리품 싸이클</a></li>
-           <li><a href="/DHT/tic" data-page="tic">온도 조절계</a></li>
-          <li><a href="/DHT/auto_con_2" data-page="auto_con_2">자동운전 조건</a></li>
-          <li><a href="/DHT/io_monitor_2" data-page="io_monitoring_2">IO 모니터링</a></li>
-          <li><a href="/DHT/overview_status" data-page="overview_status">전체 현황</a></li>
+          <li><a href="/DHT/overviewCcf" data-page="overviewCcf">연속운용 현황</a></li>
+          <li><a href="/DHT/controlCcf1" data-page="controlCcf1">제어 화면</a></li>
+          <li><a href="/DHT/trendCcf" data-page="trendCcf">트렌드</a></li>
+          <li><a href="/DHT/alarmHistoryCcf" data-page="alarmHistoryCcf">알람 내역</a></li>
+          <li><a href="/DHT/alarmListCcf1" data-page="alarmListCcf1">알람</a></li>
+          <li><a href="/DHT/alarmRankingCcf" data-page="alarmRankingCcf">알람 랭킹</a></li>
+          <li><a href="/DHT/overviewDataCcf" data-page="overviewDataCcf">처리품 데이터</a></li>
+          <li><a href="/DHT/productCycleCcf" data-page="productCycleCcf">처리품 싸이클</a></li>
+           <li><a href="/DHT/ticCcf" data-page="ticCcf">온도 조절계</a></li>
+          <li><a href="/DHT/autoConCcf" data-page="autoConCcf">자동운전 조건</a></li>
+          <li><a href="/DHT/ioMonitorCcf1" data-page="ioMonitorCcf1">IO 모니터링</a></li>
+          <li><a href="/DHT/overviewStatusAll" data-page="overviewStatusAll">전체 현황</a></li>
         </ul>
       </nav>
     </header>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="alarmCm">
+	<select id="alarmListCm1AlarmData" resultType="alarm">
+		SELECT *
+		FROM tb_alarm_info
+		WHERE 1=1
+		AND ai_webdir = 'alarm12'
+	</select>
+	
+	<select id="alarmListCm2AlarmData" resultType="alarm">
+		SELECT *
+		FROM tb_alarm_info
+		WHERE 1=1
+		AND ai_webdir = 'alarm22'
+	</select>
+	
+</mapper>
