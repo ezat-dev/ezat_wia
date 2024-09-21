@@ -30,11 +30,6 @@ public class AlarmCmDaoImpl implements AlarmCmDao{
 	}
 
 	@Override
-	public Alarm alarmListCm2AlarmPopup(Alarm alarm) {
-		return sqlSession.selectOne("alarmCm.alarmListCm2AlarmPopup", alarm);
-	}
-
-	@Override
 	public int alarmListCmCommentChk(Alarm alarm) {
 		return sqlSession.selectOne("alarmCm.alarmListCmCommentChk", alarm);
 	}

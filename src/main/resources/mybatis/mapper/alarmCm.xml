@@ -5,7 +5,7 @@
 		SELECT *
 		FROM tb_alarm_info
 		WHERE 1=1
-		AND ai_webdir = 'alarm12'
+		AND ai_webdir = 'alarm21'
 	</select>
 	
 	<select id="alarmListCm2AlarmData" resultType="alarm">

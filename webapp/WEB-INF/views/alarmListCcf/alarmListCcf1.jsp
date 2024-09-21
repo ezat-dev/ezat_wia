@@ -210,13 +210,13 @@
 				        
 						    <label for="fileInput" class="file-label">사진파일</label>
 						    <input type="file" name="fileInput" accept="image/*" required id="fileInput" class="file-input" />
-				        	<img id="imagePreview" style="display:block; max-width: 100%; margin-top: 10px;" /> <!-- 기본 대체 이미지 -->
+				        	<img id="imagePreview" name="imagePreview" style="display:block; max-width: 100%; margin-top: 10px;" /> <!-- 기본 대체 이미지 -->
 				    </div>
 				    
 				    <div id="pdfContent" class="content-section" style="display: none;">
 				            <label for="pdfInput" class="file-label">PDF 파일 선택</label>
 				            <input type="file" name="pdfInput" accept="application/pdf" required id="pdfInput" class="file-input" />
-							<iframe id="pdfPreview" src="" style="display:block; margin-top:10px;" width = "780px" height = "380px"></iframe>
+							<iframe id="pdfPreview" name="pdfPreview" src="" style="display:block; margin-top:10px;" width = "780px" height = "380px"></iframe>
 				    </div>
 				</div>
 			    <input type="text" name="ai_webdir" class="ai_webdir" style="display:none;"/>
@@ -392,9 +392,13 @@
 				
 				if(data.ac_filename != null && data.ac_filename != ''){
 					$("#imagePreview").attr("src","/fileUploads/img/"+data.ac_filename);
+				}else{					
+					$("#imagePreview").attr("src","");
 				}
 				if(data.ac_pdf_filename != null && data.ac_pdf_filename != ''){
 					$("#pdfPreview").attr("src","/fileUploads/pdf/"+data.ac_pdf_filename);
+				}else{
+					$("#pdfPreview").attr("src","");
 				}
 			}
 		});
@@ -458,8 +462,6 @@
 	//모달 닫힘
 	function modalClose(){
 		$("#modal").css("display","none");
-		$("#imagePrivew").css("display","none");
-		$("#imagePrivew").attr("arc","defaultImage.png");
 		
 		$("#alarmForm")[0].reset();
 	}

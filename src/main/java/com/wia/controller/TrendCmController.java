@@ -165,12 +165,14 @@ public class TrendCmController {
         rtnMap.put("tf3Pv", tf3PvMap);
         rtnMap.put("rinsePv", rinsePvMap);
         rtnMap.put("dippPv", dippPvMap);
+        
+/*
         rtnMap.put("tf1Sp", tf1SpMap);
         rtnMap.put("tf2Sp", tf2SpMap);
         rtnMap.put("tf3Sp", tf3SpMap);
         rtnMap.put("rinseSp", rinseSpMap);
         rtnMap.put("dippSp", dippSpMap);
-
+*/
         Map<String, Object> resultMap = new HashMap<>();
         resultMap.put("data", rtnMap);
 

@@ -30,11 +30,6 @@ public class AlarmCmServiceImpl implements AlarmCmService{
 	}
 
 	@Override
-	public Alarm alarmListCm2AlarmPopup(Alarm alarm) {
-		return alarmDao.alarmListCm2AlarmPopup(alarm);
-	}
-
-	@Override
 	public int alarmListCmCommentChk(Alarm alarm) {
 		return alarmDao.alarmListCmCommentChk(alarm);
 	}

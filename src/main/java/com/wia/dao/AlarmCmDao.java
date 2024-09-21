@@ -12,8 +12,6 @@ public interface AlarmCmDao {
 
 	Alarm alarmListCm1AlarmPopup(Alarm alarm);
 
-	Alarm alarmListCm2AlarmPopup(Alarm alarm);
-
 	int alarmListCmCommentChk(Alarm alarm);
 
 	void alarmListCmComment(Alarm alarm);

@@ -303,7 +303,7 @@ public class TrendCcfController {
         rtnMap.put("qfCpPv", qfCpPvMap);
         rtnMap.put("diffCpPv", diffCpPvMap);
         rtnMap.put("crackCpPv", crackCpPvMap);
-
+/*
         rtnMap.put("preSp", preSpMap);
         rtnMap.put("heatSp", heatSpMap);
         rtnMap.put("qf1Sp", qf1SpMap);
@@ -315,7 +315,7 @@ public class TrendCcfController {
         rtnMap.put("qfCpSp", qfCpSpMap);
         rtnMap.put("diffCpSp", diffCpSpMap);
         rtnMap.put("crackCpSp", crackCpSpMap);
-
+*/
         Map<String, Object> resultMap = new HashMap<>();
         resultMap.put("data", rtnMap);
 

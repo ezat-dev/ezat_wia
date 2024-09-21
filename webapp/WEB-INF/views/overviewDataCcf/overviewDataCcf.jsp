@@ -616,7 +616,7 @@ $(document).ready(function() {
 //OPC값 알람 조회
 function overviewListView(){
 	$.ajax({
-		url:"/DHT/ccf_overview_data/view",
+		url:"/DHT/overviewDataCcf/view",
 		type:"post",
 		dataType:"json",
 		success:function(result){				

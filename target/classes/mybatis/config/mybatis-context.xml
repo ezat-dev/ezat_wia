@@ -9,6 +9,7 @@
   <mappers>
    <mapper resource="mybatis/mapper/alarmList.xml"/>
    <mapper resource="mybatis/mapper/alarmCcf.xml"/>
+   <mapper resource="mybatis/mapper/alarmCm.xml"/>
    <mapper resource="mybatis/mapper/trendCcf.xml"/>
    <mapper resource="mybatis/mapper/trendCm.xml"/>
   </mappers>

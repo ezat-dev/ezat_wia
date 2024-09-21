@@ -81,10 +81,18 @@
   <div class="header"><%@ include file="/WEB-INF/resources/header/index.jsp" %></div>
   <div id="ft"><%@ include file="/WEB-INF/resources/footer/index.jsp" %></div>
 <script>
+/*
+//SP값 포함
 var seriesNames = [
     "prePv", "heatPv", "qf1Pv", "qf2Pv", "diffPv", "crack1Pv", "crack2Pv",
     "oilPv", "qfCpPv", "diffCpPv", "crackCpPv", "preSp", "heatSp", "qf1Sp",
     "qf2Sp", "diffSp", "crack1Sp", "crack2Sp", "oilSp", "qfCpSp", "diffCpSp", "crackCpSp"
+];
+*/
+//SP값 미포함
+var seriesNames = [
+    "prePv", "heatPv", "qf1Pv", "qf2Pv", "diffPv", "crack1Pv", "crack2Pv",
+    "oilPv", "qfCpPv", "diffCpPv", "crackCpPv"
 ];
 
 window.onload = function() {
@@ -105,7 +113,6 @@ window.onload = function() {
 function loadTrendData() {
     var startDate = ($('#startDate').val()).replace("T", " ") + ":00";
     var endDate = ($('#endDate').val()).replace("T", " ") + ":00";
-
 
     $.ajax({
         url: "/DHT/trendCcf/getData",
@@ -141,10 +148,40 @@ function loadTrendData() {
                 xAxis: {
                     type: 'datetime',
                     title: { text: '날짜 및 시간' },
+                    crosshair:{
+                       width:1,
+                       color:'#E2E2E2',
+                       zIndex:5
+                    },               
                     labels: {
-                        format: '{value:%Y-%m-%d %H:%M}' // X축 레이블 포맷 설정
+                      useHTML: true,
+                      formatter: function() {
+                        var date = Highcharts.dateFormat('%m-%d', this.value);
+                        var time = Highcharts.dateFormat('%H:%M', this.value);
+                        return '<span style="font-weight:bold; font-size:10pt;">' + date + '</span><br>' +
+                               '<span style="font-size:10pt; color:gray;">' + time + '</span>';
+                      },
+                      style: {
+                        whiteSpace: 'nowrap'
+                      }
                     }
                 },
+                tooltip: {
+                   useHTML: true,
+                   shared: true, // 여러 시리즈의 데이터를 보여줌
+                   positioner: function(labelWidth, labelHeight, point) {
+                     return { x: point.plotX + this.chart.plotLeft + 15, y: point.plotY + this.chart.plotTop - labelHeight }; // 툴팁 위치 조정
+                   },
+                   formatter: function() {
+                     var s = '<b>' + Highcharts.dateFormat('%H:%M:%S', this.x) + '</b><br/>'; // 시간 표시
+                     this.points.forEach(function(point) {
+                       s += '<span style="color:' + point.series.color + '">' + point.series.name + ':</span> ' + point.y + '<br/>'; // 각 시리즈의 데이터 표시
+                     });
+                     return s;
+                   },
+                   borderColor: '#333333',
+                   shadow: false
+                 },
                 exporting: {
                     buttons: {
                         contextButton: {

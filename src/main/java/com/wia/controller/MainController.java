@@ -31,6 +31,9 @@ public class MainController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home() {
 		
-		return "//overviewCm/overviewCm.jsp";
-	}	
+		return "/overviewCm/overviewCm.jsp";
+	}
+	
+
+	
 }

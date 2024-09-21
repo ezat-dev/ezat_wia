@@ -81,8 +81,13 @@
   <div class="header"><%@ include file="/WEB-INF/resources/header/index.jsp" %></div>
   <div id="ft"><%@ include file="/WEB-INF/resources/footer/index.jsp" %></div>
 <script>
-  var seriesNames = ["tf1Pv", "tf2Pv", "tf3Pv", "rinsePv", "dippPv", "tf1Sp", "tf2Sp", "tf3Sp", "rinseSp", "dippSp"];
-
+/*
+//SP값 포함
+var seriesNames = ["tf1Pv", "tf2Pv", "tf3Pv", "rinsePv", "dippPv", "tf1Sp", "tf2Sp", "tf3Sp", "rinseSp", "dippSp"];
+*/
+//SP값 미포함
+var seriesNames = ["tf1Pv", "tf2Pv", "tf3Pv", "rinsePv", "dippPv"];
+  var chart;
   window.onload = function() {
     var now = new Date();
     var startTime = new Date(now.getTime() - (33 * 60 * 60 * 1000));
@@ -98,8 +103,6 @@
     loadTrendData();
   };
 
-  
-  
   function loadTrendData() {
     var startDate = ($('#startDate').val()).replace("T", " ") + ":00";
     var endDate = ($('#endDate').val()).replace("T", " ") + ":00";
@@ -131,24 +134,56 @@
         });
 
         Highcharts.chart('container', {
-          accessibility: { enabled: false },
-          title: { text: 'Trend Data' },
-          xAxis: {
-            type: 'datetime',
-            title: { text: '날짜 및 시간' },
-            labels: {
-              format: '{value:%Y-%m-%d %H:%M}' // Format x-axis labels
-            }
-          },
-          exporting: {
-            buttons: {
-              contextButton: {
-                menuItems: ['downloadPNG', 'downloadPDF', 'downloadXLS', 'separator']
-              }
-            }
-          },
-          series: seriesData
-        });
+             accessibility: { enabled: false },
+             title: { text: 'Trend Data' },
+             xAxis: {
+               type: 'datetime',
+               title: { text: '날짜 및 시간' },
+               crosshair:{
+                  width:1,
+                  color:'#E2E2E2',
+                  zIndex:5
+               },               
+               labels: {
+                 useHTML: true,
+                 formatter: function() {
+                   var date = Highcharts.dateFormat('%m-%d', this.value);
+                   var time = Highcharts.dateFormat('%H:%M', this.value);
+                   return '<span style="font-weight:bold; font-size:10pt;">' + date + '</span><br>' +
+                          '<span style="font-size:10pt; color:gray;">' + time + '</span>';
+                 },
+                 style: {
+                   whiteSpace: 'nowrap'
+                 }
+               }
+             },
+             tooltip: {
+               useHTML: true,
+               shared: true, // 여러 시리즈의 데이터를 보여줌
+               positioner: function(labelWidth, labelHeight, point) {
+                 return { x: point.plotX + this.chart.plotLeft + 15, y: point.plotY + this.chart.plotTop - labelHeight }; // 툴팁 위치 조정
+               },
+               formatter: function() {
+                 var s = '<b>' + Highcharts.dateFormat('%H:%M:%S', this.x) + '</b><br/>'; // 시간 표시
+                 this.points.forEach(function(point) {
+                   s += '<span style="color:' + point.series.color + '">' + point.series.name + ':</span> ' + point.y + '<br/>'; // 각 시리즈의 데이터 표시
+                 });
+                 return s;
+               },
+               borderColor: '#333333',
+               shadow: false
+             },
+             exporting: {
+               buttons: {
+                 contextButton: {
+                   menuItems: ['downloadPNG', 'downloadPDF', 'downloadXLS', 'separator']
+                 }
+               }
+             },
+             series: seriesData
+           });
+
+
       },
       error: function(xhr, status, error) {
         console.error("Ajax request failed:", status, error);
