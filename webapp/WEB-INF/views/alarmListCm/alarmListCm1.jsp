@@ -1,7 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ page import="java.util.List" %>
-<%@ page import="com.wia.domain.AlarmList" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,6 +43,20 @@
    margin-top:85px;
 
    }
+
+	#ac_comment{
+		background-color:white;
+		margin-left: 10px;
+		padding: 10px;
+		border-radius: 10px;
+		box-shadow: inset 3px 3px 10px #e6e6e6;
+		min-width: 97%;
+		max-width: 97%;
+		min-height: 95%;
+		max-height: 95%;
+		vertical-align: top;
+		resize:none;
+	}   
    </style>
   <title>Document</title>
 </head>
@@ -168,10 +180,57 @@
   <div class="alarm-105">에열로 후 버너 트립</div>
 </div>
   
+
+	<div class="alarm-modal" id="modal" style="display: none;">
+        <div class="popup-box">
+			<form action="/DHT/alarmListCcf1/upload" method="post" 
+					enctype="multipart/form-data" id="alarmForm" class="upload-form">        
+	            <div class="popup-beader"></div>
+	            <img class="close" src="/DHT/image/alarm_list/close0.png" onclick="modalClose();" style="cursor:pointer;"/>
+	            <button onclick="saveComment()" class="ellipse-1" type="button" style="cursor:pointer;">저장</button>
+				<button onclick="updateComment()" class="ellipse-2" type="button" style="cursor:pointer;">수정</button>
+				<button class="ellipse-3" type="button" onclick="modalClose();" style="cursor:pointer;">닫기</button>
+	            <div class="line-1"></div>
+	            <div class="frame-1">
+	            </div>
+	            <div class="frame-2">
+	            	<textarea name="ac_comment" id="ac_comment" cols="30" rows="10"></textarea>
+				</div>
+	            <div class="frame-3">
+				    <div class="button-container">
+				        <button id="photoButton" class="toggle-button" type="button">이미지</button>
+				        <button id="pdfButton" class="toggle-button" type="button">PDF</button>
+				    </div>
+				    
+				    <div id="photoContent" class="content-section">
+				        
+						    <label for="fileInput" class="file-label">사진파일</label>
+						    <input type="file" name="fileInput" accept="image/*" required id="fileInput" class="file-input" />
+				        	<img id="imagePreview" style="display:block; max-width: 100%; margin-top: 10px;" /> <!-- 기본 대체 이미지 -->
+				    </div>
+				    
+				    <div id="pdfContent" class="content-section" style="display: none;">
+				            <label for="pdfInput" class="file-label">PDF 파일 선택</label>
+				            <input type="file" name="pdfInput" accept="application/pdf" required id="pdfInput" class="file-input" />
+							<iframe id="pdfPreview" src="" style="display:block; margin-top:10px;" width = "780px" height = "380px"></iframe>
+				    </div>
+				</div>
+			    <input type="text" name="ai_webdir" class="ai_webdir" style="display:none;"/>
+			    <input type="text" name="ai_webclass" class="ai_webclass" style="display:none;" />		            
+			    <input type="text" name="ai_plcaddr" class="ai_plcaddr" style="display:none;" />
+			</form>
+            <div class="frame-4"></div>
+        </div>
+    </div>  
+  
+  
 <script>
 //전역변수
 var acTag = $(".frame-1").val();
-var alarm1Interval;
+var alarmInterval;
+var className;
+var uploadImgFileName;
+var uploadPdfFileName;	
 
 //로드
 $(document).ready(function() {
@@ -179,10 +238,73 @@ $(document).ready(function() {
 		'padding': '5px'
 	});
 	
+	$("#photoContent").css("display","block");
+	$("#photoButton").addClass("active");		
+	
 	getAlarmText();
-	cmAlarmList1View();
-	alarm1Interval = setInterval("cmAlarmList1View()", 1000);
+	cmAlarmListView();
+	alarmInterval = setInterval("cmAlarmListView()", 1000);
 });
+
+
+//이벤트
+
+$("#fileInput").change(function(event){
+    const file = event.target.files[0]; // 선택된 파일 가져오기
+    if(file){
+        const reader = new FileReader(); // FileReader 객체 생성
+        reader.onload = function(e) {
+        	
+        	$("#imagePreview").attr("src",e.target.result); // 미리보기 이미지 소스 업데이트
+        	$("#imagePreview").css("display","block");// 미리보기 보이게
+        	uploadImgFileName = e.target.result;
+        };
+        reader.readAsDataURL(file); // 파일을 데이터 URL로 읽기
+    }
+});
+
+$("#pdfInput").change(function(event){
+    const file = event.target.files[0]; // 선택된 파일 가져오기
+    if(file){
+        const reader = new FileReader(); // FileReader 객체 생성
+        reader.onload = function(e) {
+        	
+        	$("#pdfPreview").attr("src",e.target.result); // 미리보기 이미지 소스 업데이트
+        	$("#pdfPreview").css("display","block");// 미리보기 보이게
+        	uploadImgFileName = e.target.result;
+        };
+        reader.readAsDataURL(file); // 파일을 데이터 URL로 읽기
+    }		
+});
+
+$("#photoButton").on("click",function(){
+	$("#photoContent").css("display","block");
+	$("#pdfContent").css("display","none");
+	$("#photoButton").addClass("active");
+	$("#pdfButton").removeClass("active");
+});
+
+$("#pdfButton").on("click",function(){
+	$("#photoContent").css("display","none");
+	$("#pdfContent").css("display","block");
+	$("#photoButton").removeClass("active");
+	$("#pdfButton").addClass("active");
+});
+
+$('[class^="alarm-"]').on("click",function(ev){
+	className = ev.currentTarget.className;
+	var v_index = className.indexOf("-")+1;
+	var v_length = className.length;
+	
+	var v_value = className.substring(v_index,v_length);
+	
+	if(v_value <= 105){
+		modalOpen();
+		cmALarmListPopup();			
+	}
+	
+});
+
 
 function goToIndex2() {
     window.location.href = '/DHT/alarmListCm2'; 
@@ -190,7 +312,7 @@ function goToIndex2() {
 
 
 //OPC값 알람 조회
-function cmAlarmList1View(){
+function cmAlarmListView(){
 	$.ajax({
 		url:"/DHT/alarmListCm1/view",
 		type:"post",
@@ -239,6 +361,108 @@ function getAlarmText(){
 		}
 	});
 }
+
+
+
+//알람팝업 데이터 조회
+function cmALarmListPopup(){
+	var alarmGroup = "alarm21";
+	var alarmClass = className;
+	
+	$.ajax({
+		url:"/DHT/alarmListCm1/alarmPopup",
+		type:"post",
+		dataType:"json",
+		data:{
+			"alarmGroup":alarmGroup,
+			"alarmClass":alarmClass
+		},
+		success:function(result){
+
+			var data = result.data;
+			
+			$(".popup-beader").text("PLC ADDRESS : "+data.ai_plcaddr);
+			$(".ai_webdir").val(data.ai_webdir);
+			$(".ai_webclass").val(data.ai_webclass);
+			$(".ai_plcaddr").val(data.ai_plcaddr);
+			$(".frame-1").text(data.ai_plcname);
+			$("#ac_comment").text(data.ac_comment);
+			
+			if(data.ac_filename != null && data.ac_filename != ''){
+				$("#imagePreview").attr("src","/fileUploads/img/"+data.ac_filename);
+			}
+			if(data.ac_pdf_filename != null && data.ac_pdf_filename != ''){
+				$("#pdfPreview").attr("src","/fileUploads/pdf/"+data.ac_pdf_filename);
+			}
+		}
+	});
+}
+
+
+//코멘트 저장
+function saveComment(){
+	var alarmData = new FormData($("#alarmForm")[0]);
+	$.ajax({
+		url:"/DHT/alarmListCm1/saveComment",
+		enctype:"multipart/form-data",
+		type:"post",
+		contentType: false,
+		processData: false,
+		dataType: "json",
+		data:alarmData,
+		success:function(result){
+			$("#alarmForm")[0].reset();
+			
+			alert("등록되었습니다.");
+			modalClose();
+			
+		}
+	});
+}
+
+//코멘트 수정
+function updateComment(){
+	var alarmData = new FormData($("#alarmForm")[0]);
+	$.ajax({
+		url:"/DHT/alarmListCm1/updateComment",
+		enctype:"multipart/form-data",
+		type:"post",
+		contentType: false,
+		processData: false,
+		dataType: "json",
+		data:alarmData,
+		success:function(result){
+			var data = result.data;
+			
+			if(data == "updateComment"){
+				$("#alarmForm")[0].reset();				
+				
+				alert("수정되었습니다.");
+				modalClose();
+			}else if(data == "noSaveComment"){
+				alert("코멘트 등록 후 수정바랍니다.");
+				
+				return;
+			}
+		}
+	});
+}	
+//모달 열림
+function modalOpen(){
+	$("#modal").css("display","block");
+}
+
+
+//모달 닫힘
+function modalClose(){
+	$("#modal").css("display","none");
+	$("#imagePrivew").css("display","none");
+	$("#imagePrivew").attr("arc","defaultImage.png");
+	
+	$("#alarmForm")[0].reset();
+}
+
+
 </script>
 </body>
 </html>

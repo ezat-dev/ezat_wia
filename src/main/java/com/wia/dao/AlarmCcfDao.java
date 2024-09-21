@@ -10,4 +10,10 @@ public interface AlarmCcfDao {
 
 	List<Alarm> alarmListCcf2AlarmData();
 
+	Alarm alarmListCcf1AlarmPopup(Alarm alarm);
+
+	int alarmListCcfCommentChk(Alarm alarm);
+	
+	void alarmListCcfComment(Alarm alarm);
+
 }

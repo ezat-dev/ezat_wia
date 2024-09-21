@@ -24,4 +24,24 @@ public class AlarmCmDaoImpl implements AlarmCmDao{
 		return sqlSession.selectList("alarmCm.alarmListCm2AlarmData");
 	}
 
+	@Override
+	public Alarm alarmListCm1AlarmPopup(Alarm alarm) {
+		return sqlSession.selectOne("alarmCm.alarmListCm1AlarmPopup", alarm);
+	}
+
+	@Override
+	public Alarm alarmListCm2AlarmPopup(Alarm alarm) {
+		return sqlSession.selectOne("alarmCm.alarmListCm2AlarmPopup", alarm);
+	}
+
+	@Override
+	public int alarmListCmCommentChk(Alarm alarm) {
+		return sqlSession.selectOne("alarmCm.alarmListCmCommentChk", alarm);
+	}
+
+	@Override
+	public void alarmListCmComment(Alarm alarm) {
+		sqlSession.insert("alarmCm.alarmListCmComment", alarm);
+	}
+
 }

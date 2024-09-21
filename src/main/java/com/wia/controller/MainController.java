@@ -1,14 +1,10 @@
 package com.wia.controller;
 
-import java.text.DateFormat;
-import java.util.Date;
-import java.util.Locale;
 import java.util.concurrent.ExecutionException;
 
 import org.eclipse.milo.opcua.sdk.client.OpcUaClient;
 import org.eclipse.milo.opcua.stack.core.UaException;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -20,7 +16,7 @@ public class MainController {
 
     //OPC서버 연결시작
     public static void opcStart() throws UaException, InterruptedException, ExecutionException {
-		client = OpcUaClient.create("opc.tcp://192.168.1.192:5660");
+		client = OpcUaClient.create("opc.tcp://192.168.1.191:5660");
 			
 		client.connect().get();
     }

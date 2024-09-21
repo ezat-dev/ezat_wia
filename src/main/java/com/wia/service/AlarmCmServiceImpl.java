@@ -23,5 +23,25 @@ public class AlarmCmServiceImpl implements AlarmCmService{
 	public List<Alarm> alarmListCm2AlarmData() {
 		return alarmDao.alarmListCm2AlarmData();
 	}
+
+	@Override
+	public Alarm alarmListCm1AlarmPopup(Alarm alarm) {
+		return alarmDao.alarmListCm1AlarmPopup(alarm);
+	}
+
+	@Override
+	public Alarm alarmListCm2AlarmPopup(Alarm alarm) {
+		return alarmDao.alarmListCm2AlarmPopup(alarm);
+	}
+
+	@Override
+	public int alarmListCmCommentChk(Alarm alarm) {
+		return alarmDao.alarmListCmCommentChk(alarm);
+	}
+
+	@Override
+	public void alarmListCmComment(Alarm alarm) {
+		alarmDao.alarmListCmComment(alarm);
+	}
 	
 }

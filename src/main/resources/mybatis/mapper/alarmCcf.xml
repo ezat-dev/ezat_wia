@@ -15,4 +15,45 @@
 		AND ai_webdir = 'alarm12'
 	</select>
 	
+	<!-- 현재 선택한 알람의 코멘트이력 조회 -->
+	<select id="alarmListCcf1AlarmPopup" parameterType="alarm" resultType="alarm">
+		SELECT *
+		FROM (
+			SELECT *
+			FROM (
+				SELECT *
+				FROM tb_alarm_info
+				WHERE 1=1
+				AND ai_webdir = #{ai_webdir}
+				AND ai_webclass = #{ai_webclass}
+			) AS alarm_info
+			LEFT OUTER JOIN
+			(
+				SELECT *
+				FROM tb_alarm_cmt
+				WHERE 1=1
+				AND ac_webdir = #{ai_webdir}
+				AND ac_webclass = #{ai_webclass}
+				AND ac_yn = 'Y'
+			) AS alarm_cmt
+			ON alarm_info.ai_webdir = alarm_cmt.ac_webdir
+			AND alarm_info.ai_webclass = alarm_cmt.ac_webclass
+		) AS aa
+		ORDER BY ac_regtime DESC
+		LIMIT 1
+	</select>
+	
+	<insert id="alarmListCcfComment" parameterType="alarm">
+		{CALL sp_alarm_cmt_set (#{ai_webdir}, #{ai_webclass}, #{ac_comment}, #{ac_filename}, #{ac_pdf_filename}, #{dbSaveGb}, #{fileGb})}
+	</insert>
+	
+	<!-- 코멘트 수정시 이미 등록된 코멘트가 하나라도 있는지 -->
+	<select id="alarmListCcfCommentChk" parameterType="alarm" resultType="int">
+		SELECT COUNT(*) AS ccnt
+		FROM tb_alarm_cmt
+		WHERE 1=1
+		AND ac_webdir = #{ai_webdir}
+		AND ac_webclass = #{ai_webclass}
+	</select>	
+	
 </mapper>
