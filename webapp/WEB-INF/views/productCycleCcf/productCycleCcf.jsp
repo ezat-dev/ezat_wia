@@ -49,113 +49,136 @@
         </div>
     <div class="group-1">
       <div class="big-box"></div>
-      <div class="process-data-text">시간제어 싸이클 데이터</div>
-      <div class="data-text-box-1"></div>
-      <div class="pre-box"></div>
-      <div class="hit-box"></div>
-      <div class="crack-box-1"></div>
-      <div class="crack-box-2"></div>
-      <div class="oil-q-box"></div>
-      <div class="oil-drain-box"></div>
-      <div class="data-text-1">처리품데이터</div>
-      <div class="div">예열로</div>
-      <div class="div2">가열존</div>
-      <div class="_1">균열1존</div>
-      <div class="_2">균열2존</div>
-      <div class="div3">유조 퀜칭</div>
-      <div class="div4">유조 드레인</div>
-      <div class="_12"></div>
-      <div class="_22"></div>
-      <div class="_3"></div>
-      <div class="_4"></div>
-      <div class="_5"></div>
-      <div class="_6"></div>
-      <div class="_7"></div>
-      <div class="_13"></div>
-      <div class="_23"></div>
-      <div class="_32"></div>
-      <div class="_42"></div>
-      <div class="_52"></div>
-      <div class="_62"></div>
-      <div class="_72"></div>
-      <div class="_14"></div>
-      <div class="_24"></div>
-      <div class="_33"></div>
-      <div class="_43"></div>
-      <div class="_53"></div>
-      <div class="_63"></div>
-      <div class="_73"></div>
-      <div class="_15"></div>
-      <div class="_25"></div>
-      <div class="_34"></div>
-      <div class="_44"></div>
-      <div class="_54"></div>
-      <div class="_64"></div>
-      <div class="_74"></div>
-      <div class="_16"></div>
-      <div class="_26"></div>
-      <div class="_35"></div>
-      <div class="_45"></div>
-      <div class="_55"></div>
-      <div class="_65"></div>
-      <div class="_75"></div>
-      <div class="_17"></div>
-      <div class="_27"></div>
-      <div class="_36"></div>
-      <div class="_46"></div>
-      <div class="_56"></div>
-      <div class="_66"></div>
-      <div class="_76"></div>
-      <div class="_18"></div>
-      <div class="_28"></div>
-      <div class="_37"></div>
-      <div class="_47"></div>
-      <div class="_57"></div>
-      <div class="_67"></div>
-      <div class="_77"></div>
-      <div class="_10"></div>
-      <div class="_102"></div>
-      <div class="_103"></div>
-      <div class="_104"></div>
-      <div class="_105"></div>
-      <div class="_106"></div>
-      <div class="_107"></div>
-      <div class="_20"></div>
-      <div class="_202"></div>
-      <div class="_203"></div>
-      <div class="_204"></div>
-      <div class="_205"></div>
-      <div class="_206"></div>
-      <div class="_207"></div>
-      <div class="_30"></div>
-      <div class="_302"></div>
-      <div class="_303"></div>
-      <div class="_304"></div>
-      <div class="_305"></div>
-      <div class="_306"></div>
-      <div class="_307"></div>
-      <div class="_40"></div>
-      <div class="_402"></div>
-      <div class="_403"></div>
-      <div class="_404"></div>
-      <div class="_405"></div>
-      <div class="_406"></div>
-      <div class="_407"></div>
-      <div class="speed-cycle-data-text">속도제어 싸이클 데이터</div>
-      <div class="data-text-box-12"></div>
-      <div class="rectangle-89"></div>
-      <div class="rectangle-90"></div>
-      <div class="rectangle-91"></div>
-      <div class="data-text-2">처리품데이터</div>
-      <div class="chim-box">침탄존</div>
-      <div class="diff-box">확산존</div>
-      <div class="div5">
-        아지테이터
-        <br />
-        (퀜칭)
-      </div>
+    <div class="process-data-text">시간제어 싸이클 데이터</div>
+    <div class="data-text-box-1"></div>
+    <div class="pre-box"></div>
+    <div class="hit-box"></div>
+    <div class="crack-box-1"></div>
+    <div class="crack-box-2"></div>
+    <div class="oil-q-box"></div>
+    <div class="oil-drain-box"></div>
+    <div class="data-text-1">
+      시간제어
+      <br />
+      싸이클 데이터
     </div>
+    <div class="pre-text">예열로</div>
+    <div class="hit-text">가열존</div>
+    <div class="crack-1-text">균열1존</div>
+    <div class="crack-2-text">균열2존</div>
+    <div class="oil-q-text">유조 퀜칭</div>
+    <div class="oil-drain-text">유조 드레인</div>
+    <div class="no-1-cycle"></div>
+    <div class="no-1">NO.1 싸이클</div>
+    <div class="pre-1"></div>
+    <div class="hit-1"></div>
+    <div class="crack-1-1"></div>
+    <div class="crack-2-1"></div>
+    <div class="oil-q-1"></div>
+    <div class="oil-drain-1"></div>
+    <div class="no-2-cycle"></div>
+    <div class="no-2">NO.2 싸이클</div>
+    <div class="pre-2"></div>
+    <div class="hit-2"></div>
+    <div class="crack-1-2"></div>
+    <div class="crack-2-2"></div>
+    <div class="oil-q-2"></div>
+    <div class="oil-drain-2"></div>
+    <div class="no-3-cycle"></div>
+    <div class="no-3">NO.3 싸이클</div>
+    <div class="pre-3"></div>
+    <div class="hit-3"></div>
+    <div class="crack-1-3"></div>
+    <div class="crack-2-3"></div>
+    <div class="oil-q-3"></div>
+    <div class="oil-drain-3"></div>
+    <div class="no-4-cycle"></div>
+    <div class="no-4">NO.4 싸이클</div>
+    <div class="pre-4"></div>
+    <div class="hit-4"></div>
+    <div class="crack-1-4"></div>
+    <div class="crack-2-4"></div>
+    <div class="oil-q-4"></div>
+    <div class="oil-drain-4"></div>
+    <div class="no-5-cycle"></div>
+    <div class="no-5">NO.5 싸이클</div>
+    <div class="pre-5"></div>
+    <div class="hit-5"></div>
+    <div class="crack-1-5"></div>
+    <div class="crack-2-5"></div>
+    <div class="oil-q-5"></div>
+    <div class="oil-drain-5"></div>
+    <div class="no-6-cycle"></div>
+    <div class="no-6">NO.6 싸이클</div>
+    <div class="pre-6"></div>
+    <div class="hit-6"></div>
+    <div class="crack-1-6"></div>
+    <div class="crack-2-6"></div>
+    <div class="oil-q-6"></div>
+    <div class="oil-drain-6"></div>
+    <div class="no-7-cycle"></div>
+    <div class="no-7">NO.7 싸이클</div>
+    <div class="pre-7"></div>
+    <div class="hit-7"></div>
+    <div class="crack-1-7"></div>
+    <div class="crack-2-7"></div>
+    <div class="oil-q-7"></div>
+    <div class="oil-drain-7"></div>
+    <div class="speed-cycle-data-text">속도제어 싸이클 데이터</div>
+    <div class="data-text-box-12"></div>
+    <div class="chim-box"></div>
+    <div class="diff-box"></div>
+    <div class="agi-box"></div>
+    <div class="data-text-2">
+      속도제어
+      <br />
+      싸이클 데이터
+    </div>
+    <div class="chim-text">침탄존</div>
+    <div class="diff-text">확산존</div>
+    <div class="agi-text">
+      아지테이터
+      <br />
+      (퀜칭)
+    </div>
+    <div class="no-1-cycle-2"></div>
+    <div class="no-12">NO.1 싸이클</div>
+    <div class="chim-1"></div>
+    <div class="diff-1"></div>
+    <div class="agi-1"></div>
+    <div class="no-2-cycle-2"></div>
+    <div class="no-22">NO.2 싸이클</div>
+    <div class="chim-2"></div>
+    <div class="diff-2"></div>
+    <div class="agi-2"></div>
+    <div class="no-3-cycle-2"></div>
+    <div class="no-32">NO.3 싸이클</div>
+    <div class="chim-3"></div>
+    <div class="diff-3"></div>
+    <div class="agi-3"></div>
+    <div class="no-4-cycle-2"></div>
+    <div class="no-42">NO.4 싸이클</div>
+    <div class="chim-4"></div>
+    <div class="diff-4"></div>
+    <div class="agi-4"></div>
+    <div class="no-5-cycle-2"></div>
+    <div class="no-52">NO.5 싸이클</div>
+    <div class="chim-5"></div>
+    <div class="diff-5"></div>
+    <div class="agi-5"></div>
+    <div class="no-6-cycle-2"></div>
+    <div class="no-62">NO.6 싸이클</div>
+    <div class="chim-6"></div>
+    <div class="diff-6"></div>
+    <div class="agi-6"></div>
+    <div class="no-7-cycle-2"></div>
+    <div class="no-72">NO.7 싸이클</div>
+    <div class="chim-7"></div>
+    <div class="diff-7"></div>
+    <div class="agi-7"></div>
   </div>
+</div>
+
   
 </body>
 </html>

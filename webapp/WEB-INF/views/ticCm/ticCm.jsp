@@ -48,26 +48,44 @@
        <div id="ft">  <%@ include file="/WEB-INF/resources/footer/index.jsp" %></div>
       <div class="main"></div>
          </div>
-    <div class="group-1">
-      <div class="rectangle-1"></div>
-      <img class="ut-35-a-1" src="/DHT/image/tic_cm/ut-35-a-10.png" />
-      <img class="ut-35-a-2" src="/DHT/image/tic_cm/ut-35-a-20.png" />
-      <img class="ut-35-a-3" src="/DHT/image/tic_cm/ut-35-a-30.png" />
-      <img class="ut-35-a-4" src="/DHT/image/tic_cm/ut-35-a-40.png" />
-      <div class="rectangle-4"></div>
-      <div class="div">후세정기 디핑존</div>
-      <div class="rectangle-5"></div>
-      <div class="div2">후세정기 린스존</div>
-      <div class="rectangle-6"></div>
-      <div class="_1">템퍼링로 1존</div>
-      <div class="rectangle-7"></div>
-      <div class="_2">템퍼링로 2존</div>
-      <img class="ut-35-a-5" src="/DHT/image/tic_cm/ut-35-a-50.png" />
-      <div class="rectangle-23"></div>
-      <div class="_3">템퍼링로 3존</div>
-      <div class="rectangle-22"></div>
-      <div class="div3">온도 조절계</div>
-    </div>
+    <div class="tic-line"></div>
+    <div class="tic-text-box"></div>
+    <div class="tic-text">온도 조절계</div>
+    <img class="rins" src="/DHT/image/tic_cm/rins0.png" />
+    <div class="sp">설정값</div>
+    <div class="pv">현재값</div>
+    <div class="rins-sp"></div>
+    <div class="rins-pv"></div>
+    <div class="rins-text-box"></div>
+    <div class="rins-text">후세정기 린스존</div>
+    <img class="diffing" src="/DHT/image/tic_cm/diffing0.png" />
+    <div class="sp2">설정값</div>
+    <div class="pv2">현재값</div>
+    <div class="diffing-sp"></div>
+    <div class="diffing-pv"></div>
+    <div class="diffing-text-box"></div>
+    <div class="diffing-text">후세정기 디핑존</div>
+    <img class="tem-1" src="/DHT/image/tic_cm/tem-10.png" />
+    <div class="sp3">설정값</div>
+    <div class="pv3">현재값</div>
+    <div class="tem-1-sp"></div>
+    <div class="tem-1-pv"></div>
+    <div class="tem-1-text-box"></div>
+    <div class="tem-1-text">템퍼링로 1존</div>
+    <img class="tem-2" src="/DHT/image/tic_cm/tem-20.png" />
+    <div class="sp4">설정값</div>
+    <div class="pv4">현재값</div>
+    <div class="tem-2-sp"></div>
+    <div class="tem-2-pv"></div>
+    <div class="tem-2-text-box"></div>
+    <div class="tem-2-text">템퍼링로 2존</div>
+    <img class="tem-3" src="/DHT/image/tic_cm/tem-30.png" />
+    <div class="sp5">설정값</div>
+    <div class="pv5">현재값</div>
+    <div class="tem-3-sp"></div>
+    <div class="tem-3-pv"></div>
+    <div class="tem-3-text-box"></div>
+    <div class="tem-3-text">템퍼링로 3존</div>
   </div>
   
 </body>

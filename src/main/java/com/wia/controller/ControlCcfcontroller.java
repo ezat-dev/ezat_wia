@@ -18,6 +18,6 @@ public class ControlCcfcontroller {
     public String controlCcf2(Model model) {
     	
     	
-    	return "/controlCcf/control1Ccf.jsp";
+    	return "/controlCcf/control2Ccf.jsp";
     }
 }

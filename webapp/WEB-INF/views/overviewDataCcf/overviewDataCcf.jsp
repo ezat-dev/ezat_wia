@@ -3,15 +3,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/DHT/css/overview_1_1/vars.css">
-  <link rel="stylesheet" href="/DHT/css/overview_1_1/style.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  
-  
-  <style>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/DHT/css/overview_1_1/vars.css">
+	<link rel="stylesheet" href="/DHT/css/overview_1_1/style.css">
+	<jsp:include page="../include/pluginpage.jsp"/>
+<style>
    a,
    button,
    input,
@@ -58,19 +56,17 @@
     <div class="ccf-tray-2"></div>
     <div class="ccf-tray-3"></div>
     <div class="ccf-tray-32"></div>
-    <div class="clutchon-box-1">
-	    <div class="clutchon-text-1">
-	      CLUTCH
-	      <br />
-	      ON
-	    </div>
+    <div class="clutchon-box-1"></div>
+    <div class="clutchon-text-1">
+      CLUTCH
+      <br />
+      ON
     </div>
-    <div class="clutchon-box-2">
-	    <div class="clutchon-text-2">
-	      CLUTCH
-	      <br />
-	      ON
-	    </div>
+    <div class="clutchon-box-2"></div>
+    <div class="clutchon-text-2">
+      CLUTCH
+      <br />
+      ON
     </div>
     <div class="down-box-1"></div>
     <div class="down-text-1">하강</div>
@@ -326,11 +322,11 @@
     <div class="tong-0"></div>
     <div class="tong-text-0">0</div>
     <div class="tong-1"></div>
-    <div class="tong-text-1">1</div>    
+    <div class="tong-text-1">1</div>
     <div class="tong-2"></div>
     <div class="tong-text-2">2</div>
-    <div class="tong-3"></div>    
-	<div class="tong-text-3">3</div>    
+    <div class="tong-3"></div>
+    <div class="tong-text-3">3</div>
     <div class="tong-4"></div>
     <div class="tong-text-4">4</div>
     <div class="tong-5"></div>
@@ -375,8 +371,8 @@
     <div class="tong-text-24-1">24</div>
     <div class="tong-24-2"></div>
     <div class="tong-text-24-2">24</div> -->
-    <div class="tong-24"></div>
-    <div class="tong-text-24">24</div>
+    <div class="tong-24-3"></div>
+    <div class="tong-text-24-3">24</div>
     <div class="tong-25"></div>
     <div class="tong-text-25">25</div>
     <div class="tong-26"></div>
@@ -456,7 +452,6 @@
   <div class="pro-data-text-23">23</div>
   <div class="pro-data-text-24">24</div>
   <div class="pro-data-text-25">25</div>
-  
   <div class="pro-data-252"></div>
   <div class="pro-data-text-252">26</div>
   <div class="pro-data-253"></div>
@@ -602,6 +597,7 @@
   <div class="q-time-26"></div>
   <div class="q-time-27"></div>
 </div>
+
 <script>
 
 //전역변수
@@ -612,6 +608,8 @@ $(document).ready(function() {
 	overviewListView();
 	overviewInterval = setInterval("overviewListView()", 2000);
 });
+
+//이벤트
 
 //OPC값 알람 조회
 function overviewListView(){
@@ -684,8 +682,26 @@ function value(keys, value){
 	$("."+keys).text(value);
 	$("."+keys).css("display","");
 	$("."+keys).css("text-align","center");
+	$("."+keys).attr("onclick","popupOpen('"+keys+"')");
 }
 
+function popupOpen(keys){
+	console.log(keys);
+	modalOpen();
+}
+
+//모달 열림
+function modalOpen(){
+	$("#modal").css("display","block");
+}
+
+
+//모달 닫힘
+function modalClose(){
+	$("#modal").css("display","none");
+	
+	$("#inputForm")[0].reset();
+}
 
 </script>
 

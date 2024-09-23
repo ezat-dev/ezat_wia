@@ -175,6 +175,7 @@
 		<artifactId>mybatis-spring</artifactId>
 		<version>1.2.4</version>
 	</dependency>
+	
 	<!-- javaMail API -->
 	<dependency>
 		<groupId>javax.mail</groupId>
@@ -195,6 +196,13 @@
 	    <artifactId>postgresql</artifactId>
 	    <version>42.2.18</version>
 	</dependency>	
+		
+	<!-- SQLite -->
+	<dependency>
+	    <groupId>org.xerial</groupId>
+	    <artifactId>sqlite-jdbc</artifactId>
+	    <version>3.46.1.0</version>
+	</dependency>			
 		
 	<!-- file upload -->
 	<dependency>

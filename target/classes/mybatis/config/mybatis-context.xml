@@ -7,7 +7,6 @@
 	<package name="com.wia.domain"/>
 </typeAliases>
   <mappers>
-   <mapper resource="mybatis/mapper/alarmList.xml"/>
    <mapper resource="mybatis/mapper/alarmCcf.xml"/>
    <mapper resource="mybatis/mapper/alarmCm.xml"/>
    <mapper resource="mybatis/mapper/trendCcf.xml"/>

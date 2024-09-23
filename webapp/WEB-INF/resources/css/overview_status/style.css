@@ -808,11 +808,11 @@
   border-style: solid;
   border-color: #000000;
   border-width: 1px;
-  width: 10px;
+  width: 11px;
   height: 60px;
   position: absolute;
-  left: 412px;
-  top: 225px;
+  left: 430px;
+  top: 220px;
   transform-origin: 0 0;
   transform: rotate(90deg) scale(1, -1);
 }

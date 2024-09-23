@@ -2,13 +2,12 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script src="https://code.highcharts.com/highcharts.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <style>
+	<jsp:include page="../include/pluginpage.jsp"/>  
+<style>
     html, body {
       height: 100%;
       margin: 0;

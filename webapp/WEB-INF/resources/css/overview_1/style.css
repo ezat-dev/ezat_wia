@@ -142,7 +142,6 @@
 .clutchon-text-1 {
   color: #000000;
   text-align: center;
-  font-family: "Inter-Bold", sans-serif;
   font-size: 11px;
   font-weight: 700;
   position: absolute;
@@ -163,7 +162,6 @@
 .clutchon-text-2 {
   color: #000000;
   text-align: center;
-  font-family: "Inter-Bold", sans-serif;
   font-size: 11px;
   font-weight: 700;
   position: absolute;
@@ -184,7 +182,7 @@
 .down-text-1 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
+  
   font-size: 13px;
   font-weight: 400;
   position: absolute;
@@ -205,7 +203,7 @@
 .up-text-1 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
+  
   font-size: 13px;
   font-weight: 400;
   position: absolute;
@@ -226,7 +224,7 @@
 .down-text-2 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
+  
   font-size: 13px;
   font-weight: 400;
   position: absolute;
@@ -247,7 +245,7 @@
 .down-text-3 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
+  
   font-size: 13px;
   font-weight: 400;
   position: absolute;
@@ -324,7 +322,7 @@
   width: 11px;
   height: 92px;
   position: absolute;
-  left: 429px;
+  left: 436px;
   top: 232px;
 }
 .door-green-1 {
@@ -335,7 +333,7 @@
   width: 11px;
   height: 39px;
   position: absolute;
-  left: 429px;
+  left: 436px;
   top: 352px;
 }
 .door-yellow-1 {
@@ -346,7 +344,7 @@
   width: 11px;
   height: 83px;
   position: absolute;
-  left: 429px;
+  left: 436px;
   top: 278px;
 }
 .door-red-2 {
@@ -1202,7 +1200,7 @@
   width: 40px;
   height: 29px;
   position: absolute;
-  left: 517px;
+  left: 537px;
   top: 431px;
   object-fit: cover;
 }
@@ -1210,7 +1208,7 @@
   width: 39px;
   height: 28px;
   position: absolute;
-  left: 517px;
+  left: 537px;
   top: 431px;
   object-fit: cover;
 }
@@ -1218,7 +1216,7 @@
   width: 29px;
   height: 19px;
   position: absolute;
-  left: 522px;
+  left: 541px;
   top: 434px;
   object-fit: cover;
 }
@@ -1704,12 +1702,11 @@
 .cycle-text {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 700;
   position: absolute;
-  left: 108px;
-  top: 113px;
+  left: 94px;
+  top: 111px;
 }
 .cycle-mini-box {
   background: #ffffff;
@@ -1722,7 +1719,6 @@
 .cycle-set-time-text {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
   font-size: 20px;
   font-weight: 700;
   position: absolute;
@@ -1732,7 +1728,6 @@
 .cycle-pv-text {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
   font-size: 20px;
   font-weight: 700;
   position: absolute;
@@ -1788,7 +1783,6 @@
 .middle-value-text-1 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
   font-size: 15px;
   font-weight: 700;
   position: absolute;
@@ -1798,7 +1792,6 @@
 .middle-value-text-12 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
   font-size: 15px;
   font-weight: 700;
   position: absolute;
@@ -1830,7 +1823,6 @@
 .middle-value-text-2 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
   font-size: 15px;
   font-weight: 700;
   position: absolute;
@@ -1840,7 +1832,6 @@
 .middle-value-text-22 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
   font-size: 15px;
   font-weight: 700;
   position: absolute;
@@ -1883,13 +1874,11 @@
 .process-data-text {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
   font-size: 32px;
   font-weight: 700;
   position: absolute;
   left: 519px;
   top: 555px;
-  -webkit-text-stroke: 1px #ffffff;
 }
 .process-time-box {
   background: #123478;
@@ -1906,7 +1895,6 @@
 .process-time-text {
   color: #ffffff;
   text-align: center;
-  font-family: "Inter-Bold", sans-serif;
   font-size: 14px;
   font-weight: 700;
   position: absolute;
@@ -1930,7 +1918,6 @@
 .temperature-text {
   color: #ffffff;
   text-align: center;
-  font-family: "Inter-Bold", sans-serif;
   font-size: 14px;
   font-weight: 700;
   position: absolute;
@@ -1954,7 +1941,6 @@
 .cp-text {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
   font-size: 14px;
   font-weight: 700;
   position: absolute;
@@ -2542,7 +2528,6 @@
 .agi-speed-text {
   color: #000000;
   text-align: center;
-  font-family: "Inter-Bold", sans-serif;
   font-size: 15px;
   font-weight: 700;
   position: absolute;
@@ -2564,7 +2549,6 @@
 .pre-text {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
   font-size: 16px;
   font-weight: 700;
   position: absolute;
@@ -2586,7 +2570,6 @@
 .chim-text {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
   font-size: 16px;
   font-weight: 700;
   position: absolute;
@@ -2605,7 +2588,6 @@
 .time-sp-text {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
   font-size: 12px;
   font-weight: 700;
   position: absolute;
@@ -2615,7 +2597,6 @@
 .time-pv-text {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
   font-size: 12px;
   font-weight: 700;
   position: absolute;
@@ -2625,7 +2606,6 @@
 .tem-sp-text {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
   font-size: 12px;
   font-weight: 700;
   position: absolute;
@@ -2635,7 +2615,6 @@
 .tem-pv-text {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
   font-size: 12px;
   font-weight: 700;
   position: absolute;
@@ -2645,7 +2624,6 @@
 .cp-sp-text2 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
   font-size: 12px;
   font-weight: 700;
   position: absolute;
@@ -2655,7 +2633,6 @@
 .cp-pv-text2 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
   font-size: 12px;
   font-weight: 700;
   position: absolute;
@@ -2665,7 +2642,6 @@
 .oil-text {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
   font-size: 16px;
   font-weight: 700;
   position: absolute;
@@ -2684,7 +2660,7 @@
 .pre-mini-text {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
+  
   font-size: 12px;
   font-weight: 400;
   position: absolute;
@@ -2703,7 +2679,7 @@
 .hit-mini-text {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
+  
   font-size: 12px;
   font-weight: 400;
   position: absolute;
@@ -2722,7 +2698,7 @@
 .chim-1-mini-text {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
+  
   font-size: 12px;
   font-weight: 400;
   position: absolute;
@@ -2741,7 +2717,7 @@
 .chim-2-mini-text {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
+  
   font-size: 12px;
   font-weight: 400;
   position: absolute;
@@ -2760,7 +2736,7 @@
 .diff-mini-text {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
+  
   font-size: 12px;
   font-weight: 400;
   position: absolute;
@@ -2779,7 +2755,7 @@
 .crack-1-mini-text {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
+  
   font-size: 12px;
   font-weight: 400;
   position: absolute;
@@ -2798,7 +2774,7 @@
 .crack-2-mini-text {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
+  
   font-size: 12px;
   font-weight: 400;
   position: absolute;
@@ -2817,7 +2793,7 @@
 .q-mini-text {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
+  
   font-size: 12px;
   font-weight: 400;
   position: absolute;
@@ -2836,7 +2812,7 @@
 .drain-mini-text {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
+  
   font-size: 12px;
   font-weight: 400;
   position: absolute;
@@ -2846,7 +2822,7 @@
 .oil-cool-text-1 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
+  
   font-size: 13px;
   font-weight: 400;
   position: absolute;
@@ -2856,7 +2832,7 @@
 .oil-cool-text-2 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
+  
   font-size: 13px;
   font-weight: 400;
   position: absolute;
@@ -2922,12 +2898,11 @@
 .alarm-text {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 700;
   position: absolute;
-  left: 156px;
-  top: 244px;
+  left: 153px;
+  top: 242px;
 }
 .exit-loading-box {
   background: #d9d9d9;
@@ -2943,7 +2918,6 @@
 .exit-loading-text {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
   font-size: 20px;
   font-weight: 700;
   position: absolute;
@@ -2975,7 +2949,6 @@
 .exit-loading-tray-1-text {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
   font-size: 20px;
   font-weight: 700;
   position: absolute;
@@ -2996,7 +2969,6 @@
 .exit-loading-tray-2-text {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
   font-size: 20px;
   font-weight: 700;
   position: absolute;
@@ -3101,7 +3073,7 @@
   width: 24px;
   height: 52px;
   position: absolute;
-  left: 422px;
+  left: 432px;
   top: 192px;
   object-fit: cover;
 }
@@ -3109,7 +3081,7 @@
   width: 44px;
   height: 92px;
   position: absolute;
-  left: 412px;
+  left: 421px;
   top: 224px;
   object-fit: cover;
 }
@@ -3117,7 +3089,7 @@
   width: 33px;
   height: 78px;
   position: absolute;
-  left: 417px;
+  left: 427px;
   top: 212px;
   object-fit: cover;
 }
@@ -3149,7 +3121,7 @@
   width: 38px;
   height: 104px;
   position: absolute;
-  left: 415px;
+  left: 423px;
   top: 140px;
   object-fit: cover;
 }
@@ -3317,7 +3289,7 @@
   width: 21px;
   height: 23px;
   position: absolute;
-  left: 517px;
+  left: 537px;
   top: 455px;
   object-fit: cover;
 }
@@ -3325,7 +3297,7 @@
   width: 21px;
   height: 23px;
   position: absolute;
-  left: 538px;
+  left: 558px;
   top: 455px;
   object-fit: cover;
 }

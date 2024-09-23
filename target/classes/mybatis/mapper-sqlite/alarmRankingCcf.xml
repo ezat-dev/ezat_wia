@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="alarmRankingCcf">
+	<select id="alarmRankingCcfList" parameterType="alarmRanking" resultType="alarmRanking">
+		SELECT tagname, alarmgroup, alarmdesc, COUNT(*) AS alarmcount
+		FROM (	
+			SELECT *
+			FROM(	
+				SELECT tagname, tagvalue, alarmstate, alarmlevel, alarmgroup, alarmname, alarmdesc, trigger, 
+				time, strftime('%T',time) AS time2,
+				LEAD(alarmstate) OVER(PARTITION BY tagname ORDER BY time) AS lead_alarmstate,
+				LEAD(time) OVER(PARTITION BY tagname ORDER BY time) AS lead_alarmtime
+				FROM ALARMDATA
+				WHERE 1=1
+				AND alarmgroup = 'ALARM_CCF'
+				AND time >= ''
+				ORDER BY time
+			) AS aa
+			WHERE 1=1
+			AND alarmstate != 'Clear'
+		) AS bb
+		GROUP BY tagname
+		ORDER BY alarmcount DESC
+	</select>
+	
+</mapper>

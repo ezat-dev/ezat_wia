@@ -44,7 +44,6 @@
     <div class="group-1">
       <div class="header"><%@ include file="/WEB-INF/resources/header/index.jsp" %></div>
 	  <div id="ft">  <%@ include file="/WEB-INF/resources/footer/index.jsp" %></div>
-      <div class="footer"></div>
       <div class="main"></div>
        </div>
     <img class="ccf-1" src="/DHT/image/overview_status/ccf-10.png" />

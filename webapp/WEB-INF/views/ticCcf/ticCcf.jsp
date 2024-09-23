@@ -49,71 +49,141 @@
       <div class="main"></div>
      
     </div>
-    <div class="group-1">
-      <div class="rectangle-1"></div>
-      <div class="rectangle-2"></div>
-      <div class="rectangle-3"></div>
-      <img class="ut-35-a-1" src="/DHT/image/tic/ut-35-a-10.png" />
-      <img class="ut-35-a-2" src="/DHT/image/tic/ut-35-a-20.png" />
-      <img class="ut-35-a-3" src="/DHT/image/tic/ut-35-a-30.png" />
-      <img class="ut-35-a-4" src="/DHT/image/tic/ut-35-a-40.png" />
-      <img class="ut-35-a-5" src="/DHT/image/tic/ut-35-a-50.png" />
-      <img class="ut-35-a-6" src="/DHT/image/tic/ut-35-a-60.png" />
-      <img class="ut-35-a-7" src="/DHT/image/tic/ut-35-a-70.png" />
-      <img class="ut-35-a-8" src="/DHT/image/tic/ut-35-a-80.png" />
-      <img class="ut-35-a-9" src="/DHT/image/tic/ut-35-a-90.png" />
-      <img class="ut-35-a-10" src="/DHT/image/tic/ut-35-a-100.png" />
-      <img class="ut-35-a-11" src="/DHT/image/tic/ut-35-a-110.png" />
-      <img class="ut-35-a-12" src="/DHT/image/tic/ut-35-a-120.png" />
-      <img class="ut-35-a-13" src="/DHT/image/tic/ut-35-a-130.png" />
-      <img class="ut-35-a-14" src="/DHT/image/tic/ut-35-a-140.png" />
-      <img class="ut-35-a-15" src="/DHT/image/tic/ut-35-a-150.png" />
-      <img class="cp-1" src="/DHT/image/tic/cp-10.png" />
-      <img class="cp-2" src="/DHT/image/tic/cp-20.png" />
-      <img class="cp-3" src="/DHT/image/tic/cp-30.png" />
-      <div class="rectangle-4"></div>
-      <div class="div">예열로 온도</div>
-      <div class="rectangle-5"></div>
-      <div class="div2">가열존 온도</div>
-      <div class="rectangle-6"></div>
-      <div class="_1">침탄 1존 온도</div>
-      <div class="rectangle-7"></div>
-      <div class="_2">침탄 2존 온도</div>
-      <div class="rectangle-8"></div>
-      <div class="div3">확산존 온도</div>
-      <div class="rectangle-9"></div>
-      <div class="_12">균열 1존 온도</div>
-      <div class="rectangle-10"></div>
-      <div class="_22">균열 2존 온도</div>
-      <div class="rectangle-12"></div>
-      <div class="div4">가열존 온도</div>
-      <div class="rectangle-13"></div>
-      <div class="_13">침탄 1존 온도</div>
-      <div class="rectangle-14"></div>
-      <div class="_23">침탄 2존 온도</div>
-      <div class="rectangle-15"></div>
-      <div class="div5">확산존 온도</div>
-      <div class="rectangle-16"></div>
-      <div class="_14">균열 1존 온도</div>
-      <div class="rectangle-17"></div>
-      <div class="_24">균열 2존 온도</div>
-      <div class="rectangle-11"></div>
-      <div class="div6">유조 온도</div>
-      <div class="rectangle-18"></div>
-      <div class="div7">예열로 재가열</div>
-      <div class="rectangle-19"></div>
-      <div class="cp">침탄존 CP</div>
-      <div class="rectangle-20"></div>
-      <div class="cp2">확산존 CP</div>
-      <div class="rectangle-21"></div>
-      <div class="_1-cp">균열 1존 CP</div>
-      <div class="rectangle-22"></div>
-      <div class="div8">온도 조절계</div>
-      <div class="rectangle-23"></div>
-      <div class="div9">온도 경보계</div>
-      <div class="rectangle-24"></div>
-      <div class="cp3">CP 조절계</div>
-    </div>
+   <div class="tic-line"></div>
+    <div class="cp-line"></div>
+    <div class="tic-text-box"></div>
+    <div class="tic-text">온도 조절계</div>
+    <div class="cp-text-box"></div>
+    <div class="cp-text">CP 조절계</div>
+    <div class="pre-text-box"></div>
+    <div class="pre-text">예열로</div>
+    <img class="pre" src="/DHT/image/tic/pre0.png" />
+    <div class="div">설정값</div>
+    <div class="div2">현재값</div>
+    <div class="pre-sp"></div>
+    <div class="pre-pv"></div>
+    <div class="hit-text-box"></div>
+    <div class="hit-text">가열존</div>
+    <img class="hit" src="/DHT/image/tic/hit0.png" />
+    <div class="div3">설정값</div>
+    <div class="div4">현재값</div>
+    <div class="hit-sp"></div>
+    <div class="hit-pv"></div>
+    <div class="chim-1-text-box"></div>
+    <div class="chim-1-text">침탄 1존</div>
+    <img class="chim-1" src="/DHT/image/tic/chim-10.png" />
+    <div class="div5">설정값</div>
+    <div class="div6">현재값</div>
+    <div class="chim-1-sp"></div>
+    <div class="chim-1-pv"></div>
+    <div class="chim-2-text-box"></div>
+    <div class="chim-2-text">침탄 2존</div>
+    <img class="chim-2" src="/DHT/image/tic/chim-20.png" />
+    <div class="div7">설정값</div>
+    <div class="div8">현재값</div>
+    <div class="chim-2-sp"></div>
+    <div class="chim-2-pv"></div>
+    <div class="diff-text-box"></div>
+    <div class="diff-text">확산존</div>
+    <img class="diff" src="/DHT/image/tic/diff0.png" />
+    <div class="div9">설정값</div>
+    <div class="div10">현재값</div>
+    <div class="diff-sp"></div>
+    <div class="diff-pv"></div>
+    <div class="crack-1-text-box"></div>
+    <div class="crack-1-text">균열 1존</div>
+    <img class="crack-1" src="/DHT/image/tic/crack-10.png" />
+    <div class="div11">설정값</div>
+    <div class="div12">현재값</div>
+    <div class="crack-1-sp"></div>
+    <div class="crack-1-pv"></div>
+    <div class="crack-2-text-box"></div>
+    <div class="crack-2-text">균열 2존</div>
+    <img class="crack-2" src="/DHT/image/tic/crack-20.png" />
+    <div class="div13">설정값</div>
+    <div class="div14">현재값</div>
+    <div class="crack-2-sp"></div>
+    <div class="crack-2-pv"></div>
+    <div class="oil-text-box"></div>
+    <div class="oil-text">유조</div>
+    <img class="oil" src="/DHT/image/tic/oil0.png" />
+    <div class="div15">설정값</div>
+    <div class="div16">현재값</div>
+    <div class="oil-sp"></div>
+    <div class="oil-pv"></div>
+    <div class="alarm-line"></div>
+    <div class="alarm-text-box"></div>
+    <div class="alarm-text">온도 경보계</div>
+    <div class="pre-text-box-a"></div>
+    <div class="pre-text-a">예열로 재가열버너</div>
+    <img class="pre-a" src="/DHT/image/tic/pre-a0.png" />
+    <div class="div17">설정값</div>
+    <div class="div18">현재값</div>
+    <div class="pre-sp-a"></div>
+    <div class="pre-pv-a"></div>
+    <div class="hit-text-box-a"></div>
+    <div class="hit-text-a">가열존</div>
+    <img class="hit-a" src="/DHT/image/tic/hit-a0.png" />
+    <div class="div19">설정값</div>
+    <div class="div20">현재값</div>
+    <div class="hit-sp-a"></div>
+    <div class="hit-pv-a"></div>
+    <div class="chim-1-text-box-a"></div>
+    <div class="chim-1-text-a">침탄 1존</div>
+    <img class="chim-1-a" src="/DHT/image/tic/chim-1-a0.png" />
+    <div class="div21">설정값</div>
+    <div class="div22">현재값</div>
+    <div class="chim-1-sp-a"></div>
+    <div class="chim-1-pv-a"></div>
+    <div class="chim-2-text-box-a"></div>
+    <div class="chim-2-text-a">침탄 2존</div>
+    <img class="chim-2-a" src="/DHT/image/tic/chim-2-a0.png" />
+    <div class="div23">설정값</div>
+    <div class="div24">현재값</div>
+    <div class="chim-2-sp-a"></div>
+    <div class="chim-2-pv-a"></div>
+    <div class="diff-text-box-a"></div>
+    <div class="diff-text-a">확산존</div>
+    <img class="diff-a" src="/DHT/image/tic/diff-a0.png" />
+    <div class="div25">설정값</div>
+    <div class="div26">현재값</div>
+    <div class="diff-sp-a"></div>
+    <div class="diff-pv-a"></div>
+    <div class="crack-1-text-box-a"></div>
+    <div class="crack-1-text-a">균열 1존</div>
+    <img class="crack-1-a" src="/DHT/image/tic/crack-1-a0.png" />
+    <div class="div27">설정값</div>
+    <div class="div28">현재값</div>
+    <div class="crack-1-sp-a"></div>
+    <div class="crack-1-pv-a"></div>
+    <div class="crack-2-text-box-a"></div>
+    <div class="crack-2-text-a">균열 2존</div>
+    <img class="crack-2-a" src="/DHT/image/tic/crack-2-a0.png" />
+    <div class="div29">설정값</div>
+    <div class="div30">현재값</div>
+    <div class="crack-2-sp-a"></div>
+    <div class="crack-2-pv-a"></div>
+    <img class="cp-chim-1" src="/DHT/image/tic/cp-chim-10.png" />
+    <div class="cp-chim-1-text-box"></div>
+    <div class="cp-chim-1-text">침탄 1존 CP</div>
+    <div class="div31">설정값</div>
+    <div class="div32">현재값</div>
+    <div class="cp-chim-sp"></div>
+    <div class="cp-chim-pv"></div>
+    <img class="cp-diff" src="/DHT/image/tic/cp-diff0.png" />
+    <div class="cp-diff-text-box"></div>
+    <div class="cp-diff-text">확산존 CP</div>
+    <div class="div33">설정값</div>
+    <div class="div34">현재값</div>
+    <div class="cp-diff-sp"></div>
+    <div class="cp-diff-pv"></div>
+    <img class="cp-crack-2" src="/DHT/image/tic/cp-crack-20.png" />
+    <div class="cp-crack-2-text-box"></div>
+    <div class="cp-crack-2-text">균열 2존 CP</div>
+    <div class="div35">설정값</div>
+    <div class="div36">현재값</div>
+    <div class="cp-crack-2-sp"></div>
+    <div class="cp-crack-2-pv"></div>
   </div>
   
 </body>

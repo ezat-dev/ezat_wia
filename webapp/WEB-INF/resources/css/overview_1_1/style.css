@@ -136,8 +136,7 @@
 .clutchon-text-1 {
   color: #000000;
   text-align: center;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 11px;
+    font-size: 11px;
   font-weight: 700;
   position: absolute;
   left: 887px;
@@ -157,8 +156,7 @@
 .clutchon-text-2 {
   color: #000000;
   text-align: center;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 11px;
+    font-size: 11px;
   font-weight: 700;
   position: absolute;
   left: 1123px;
@@ -178,7 +176,6 @@
 .down-text-1 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
   font-size: 13px;
   font-weight: 400;
   position: absolute;
@@ -199,7 +196,6 @@
 .up-text-1 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
   font-size: 13px;
   font-weight: 400;
   position: absolute;
@@ -220,7 +216,6 @@
 .down-text-2 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
   font-size: 13px;
   font-weight: 400;
   position: absolute;
@@ -241,7 +236,6 @@
 .down-text-3 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
   font-size: 13px;
   font-weight: 400;
   position: absolute;
@@ -1196,7 +1190,7 @@
   width: 40px;
   height: 29px;
   position: absolute;
-  left: 517px;
+  left: 537px;
   top: 431px;
   object-fit: cover;
 }
@@ -1204,7 +1198,7 @@
   width: 39px;
   height: 28px;
   position: absolute;
-  left: 517px;
+  left: 537px;
   top: 431px;
   object-fit: cover;
 }
@@ -1212,7 +1206,7 @@
   width: 29px;
   height: 19px;
   position: absolute;
-  left: 522px;
+  left: 541px;
   top: 434px;
   object-fit: cover;
 }
@@ -1698,8 +1692,7 @@
 .cycle-text {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 13px;
+    font-size: 13px;
   font-weight: 700;
   position: absolute;
   left: 108px;
@@ -1716,8 +1709,7 @@
 .cycle-set-time-text {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 20px;
+    font-size: 20px;
   font-weight: 700;
   position: absolute;
   left: 52px;
@@ -1726,8 +1718,7 @@
 .cycle-pv-text {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 20px;
+    font-size: 20px;
   font-weight: 700;
   position: absolute;
   left: 54px;
@@ -1782,8 +1773,7 @@
 .middle-value-text-1 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 15px;
+    font-size: 15px;
   font-weight: 700;
   position: absolute;
   left: 717px;
@@ -1792,8 +1782,7 @@
 .middle-value-text-12 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 15px;
+    font-size: 15px;
   font-weight: 700;
   position: absolute;
   left: 717px;
@@ -1824,8 +1813,7 @@
 .middle-value-text-2 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 15px;
+    font-size: 15px;
   font-weight: 700;
   position: absolute;
   left: 1113px;
@@ -1834,8 +1822,7 @@
 .middle-value-text-22 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 15px;
+    font-size: 15px;
   font-weight: 700;
   position: absolute;
   left: 1113px;
@@ -1866,7 +1853,6 @@
 .oil-cool-text-1 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
   font-size: 13px;
   font-weight: 400;
   position: absolute;
@@ -1876,7 +1862,6 @@
 .oil-cool-text-2 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Regular", sans-serif;
   font-size: 13px;
   font-weight: 400;
   position: absolute;
@@ -1886,8 +1871,7 @@
 .pq-door-text {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 16px;
+    font-size: 16px;
   font-weight: 700;
   position: absolute;
   left: 1597px;
@@ -1896,8 +1880,7 @@
 .pq-lifter-text {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 16px;
+    font-size: 16px;
   font-weight: 700;
   position: absolute;
   left: 1585px;
@@ -2513,8 +2496,7 @@
 .tong-text-0 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24px;
+    font-size: 24px;
   font-weight: 700;
   position: absolute;
   left: 70px;
@@ -2534,8 +2516,7 @@
 .tong-text-1 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24px;
+    font-size: 24px;
   font-weight: 700;
   position: absolute;
   left: 72px;
@@ -2555,8 +2536,7 @@
 .tong-text-2 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24px;
+    font-size: 24px;
   font-weight: 700;
   position: absolute;
   left: 115px;
@@ -2576,8 +2556,7 @@
 .tong-text-3 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24px;
+    font-size: 24px;
   font-weight: 700;
   position: absolute;
   left: 158px;
@@ -2597,8 +2576,7 @@
 .tong-text-4 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24px;
+    font-size: 24px;
   font-weight: 700;
   position: absolute;
   left: 199px;
@@ -2618,8 +2596,7 @@
 .tong-text-5 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24px;
+    font-size: 24px;
   font-weight: 700;
   position: absolute;
   left: 243px;
@@ -2639,8 +2616,7 @@
 .tong-text-6 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24px;
+    font-size: 24px;
   font-weight: 700;
   position: absolute;
   left: 296px;
@@ -2660,8 +2636,7 @@
 .tong-text-7 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24px;
+    font-size: 24px;
   font-weight: 700;
   position: absolute;
   left: 354px;
@@ -2681,8 +2656,7 @@
 .tong-text-8 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24px;
+    font-size: 24px;
   font-weight: 700;
   position: absolute;
   left: 470px;
@@ -2702,8 +2676,7 @@
 .tong-text-9 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24px;
+    font-size: 24px;
   font-weight: 700;
   position: absolute;
   left: 549px;
@@ -2723,8 +2696,7 @@
 .tong-text-10 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24px;
+    font-size: 24px;
   font-weight: 700;
   position: absolute;
   left: 622px;
@@ -2744,8 +2716,7 @@
 .tong-text-11 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24px;
+    font-size: 24px;
   font-weight: 700;
   position: absolute;
   left: 705px;
@@ -2765,8 +2736,7 @@
 .tong-text-12 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24px;
+    font-size: 24px;
   font-weight: 700;
   position: absolute;
   left: 758px;
@@ -2786,8 +2756,7 @@
 .tong-text-13 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24px;
+    font-size: 24px;
   font-weight: 700;
   position: absolute;
   left: 800px;
@@ -2807,8 +2776,7 @@
 .tong-text-14 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24px;
+    font-size: 24px;
   font-weight: 700;
   position: absolute;
   left: 853px;
@@ -2828,8 +2796,7 @@
 .tong-text-15 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24px;
+    font-size: 24px;
   font-weight: 700;
   position: absolute;
   left: 905px;
@@ -2849,8 +2816,7 @@
 .tong-text-16 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24px;
+    font-size: 24px;
   font-weight: 700;
   position: absolute;
   left: 954px;
@@ -2870,8 +2836,7 @@
 .tong-text-17 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24px;
+    font-size: 24px;
   font-weight: 700;
   position: absolute;
   left: 1009px;
@@ -2891,8 +2856,7 @@
 .tong-text-18 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24px;
+    font-size: 24px;
   font-weight: 700;
   position: absolute;
   left: 1064px;
@@ -2912,8 +2876,7 @@
 .tong-text-19 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24px;
+    font-size: 24px;
   font-weight: 700;
   position: absolute;
   left: 1125px;
@@ -2933,8 +2896,7 @@
 .tong-text-20 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24px;
+    font-size: 24px;
   font-weight: 700;
   position: absolute;
   left: 1187px;
@@ -2954,8 +2916,7 @@
 .tong-text-21 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24px;
+    font-size: 24px;
   font-weight: 700;
   position: absolute;
   left: 1251px;
@@ -2975,8 +2936,7 @@
 .tong-text-22 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24px;
+    font-size: 24px;
   font-weight: 700;
   position: absolute;
   left: 1328px;
@@ -2996,8 +2956,7 @@
 .tong-text-23 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24px;
+    font-size: 24px;
   font-weight: 700;
   position: absolute;
   left: 1426px;
@@ -3017,8 +2976,7 @@
 .tong-text-24-1 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24px;
+    font-size: 24px;
   font-weight: 700;
   position: absolute;
   left: 1540px;
@@ -3038,8 +2996,7 @@
 .tong-text-24-2 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24px;
+    font-size: 24px;
   font-weight: 700;
   position: absolute;
   left: 1540px;
@@ -3059,8 +3016,7 @@
 .tong-text-24-3 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24px;
+    font-size: 24px;
   font-weight: 700;
   position: absolute;
   left: 1547px;
@@ -3080,8 +3036,7 @@
 .tong-text-25 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24px;
+    font-size: 24px;
   font-weight: 700;
   position: absolute;
   left: 1647px;
@@ -3101,8 +3056,7 @@
 .tong-text-26 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24px;
+    font-size: 24px;
   font-weight: 700;
   position: absolute;
   left: 1702px;
@@ -3122,8 +3076,7 @@
 .tong-text-27 {
   color: #000000;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24px;
+    font-size: 24px;
   font-weight: 700;
   position: absolute;
   left: 1770px;
@@ -3206,80 +3159,68 @@
 .pro-data-text {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 15px;
+    font-size: 15px;
   font-weight: 700;
   position: absolute;
   left: 36px;
   top: 570px;
   width: 112px;
   height: 23px;
-  -webkit-text-stroke: 1px #000000;
 }
 .cycle-text {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 15px;
+    font-size: 15px;
   font-weight: 700;
   position: absolute;
   left: 43px;
   top: 612px;
   width: 94px;
   height: 23px;
-  -webkit-text-stroke: 1px #000000;
 }
 .pro-onoff-text {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 14px;
+    font-size: 14px;
   font-weight: 700;
   position: absolute;
   left: 42px;
   top: 654px;
   width: 84px;
   height: 23px;
-  -webkit-text-stroke: 1px #000000;
 }
 .cool-text {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 15px;
+    font-size: 15px;
   font-weight: 700;
   position: absolute;
   left: 66px;
   top: 741px;
   width: 30px;
   height: 23px;
-  -webkit-text-stroke: 1px #000000;
 }
 .pro-number-text {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 15px;
+    font-size: 15px;
   font-weight: 700;
   position: absolute;
   left: 51px;
   top: 697px;
   width: 76px;
   height: 23px;
-  -webkit-text-stroke: 1px #000000;
 }
 .q-time-text {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 15px;
+    font-size: 15px;
   font-weight: 700;
   position: absolute;
   left: 51px;
   top: 783px;
   width: 76px;
   height: 23px;
-  -webkit-text-stroke: 1px #000000;
 }
 .pro-data-0 {
   background: #123478;
@@ -3570,340 +3511,288 @@
 .pro-data-text-0 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 28px;
+    font-size: 28px;
   font-weight: 700;
   position: absolute;
   left: 165px;
   top: 561px;
   width: 22px;
   height: 38px;
-  -webkit-text-stroke: 1px #000000;
 }
 .pro-data-text-1 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 28px;
+    font-size: 28px;
   font-weight: 700;
   position: absolute;
   left: 230px;
   top: 562px;
   width: 16px;
   height: 38px;
-  -webkit-text-stroke: 1px #000000;
 }
 .pro-data-text-2 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 28px;
+    font-size: 28px;
   font-weight: 700;
   position: absolute;
   left: 291px;
   top: 561px;
   width: 20px;
   height: 38px;
-  -webkit-text-stroke: 1px #000000;
 }
 .pro-data-text-3 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 28px;
+    font-size: 28px;
   font-weight: 700;
   position: absolute;
   left: 353px;
   top: 561px;
   width: 21px;
   height: 38px;
-  -webkit-text-stroke: 1px #000000;
 }
 .pro-data-text-4 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 28px;
+    font-size: 28px;
   font-weight: 700;
   position: absolute;
   left: 415px;
   top: 561px;
   width: 22px;
   height: 38px;
-  -webkit-text-stroke: 1px #000000;
 }
 .pro-data-text-5 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 28px;
+    font-size: 28px;
   font-weight: 700;
   position: absolute;
   left: 479px;
   top: 561px;
   width: 20px;
   height: 38px;
-  -webkit-text-stroke: 1px #000000;
 }
 .pro-data-text-6 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 28px;
+    font-size: 28px;
   font-weight: 700;
   position: absolute;
   left: 541px;
   top: 561px;
   width: 21px;
   height: 38px;
-  -webkit-text-stroke: 1px #000000;
 }
 .pro-data-text-7 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 28px;
+    font-size: 28px;
   font-weight: 700;
   position: absolute;
   left: 604px;
   top: 561px;
   width: 20px;
   height: 38px;
-  -webkit-text-stroke: 1px #000000;
 }
 .pro-data-text-8 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 28px;
+    font-size: 28px;
   font-weight: 700;
   position: absolute;
   left: 666px;
   top: 561px;
   width: 21px;
   height: 38px;
-  -webkit-text-stroke: 1px #000000;
 }
 .pro-data-text-9 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 28px;
+    font-size: 28px;
   font-weight: 700;
   position: absolute;
   left: 729px;
   top: 561px;
   width: 21px;
   height: 38px;
-  -webkit-text-stroke: 1px #000000;
 }
 .pro-data-text-10 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 28px;
+    font-size: 28px;
   font-weight: 700;
   position: absolute;
   left: 784px;
   top: 561px;
   width: 36px;
   height: 38px;
-  -webkit-text-stroke: 1px #000000;
 }
 .pro-data-text-11 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 28px;
+    font-size: 28px;
   font-weight: 700;
   position: absolute;
   left: 849px;
   top: 561px;
   width: 31px;
   height: 38px;
-  -webkit-text-stroke: 1px #000000;
 }
 .pro-data-text-12 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 28px;
+    font-size: 28px;
   font-weight: 700;
   position: absolute;
   left: 911px;
   top: 561px;
   width: 35px;
   height: 38px;
-  -webkit-text-stroke: 1px #000000;
 }
 .pro-data-text-13 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 28px;
+    font-size: 28px;
   font-weight: 700;
   position: absolute;
   left: 973px;
   top: 561px;
   width: 35px;
   height: 38px;
-  -webkit-text-stroke: 1px #000000;
 }
 .pro-data-text-14 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 28px;
+    font-size: 28px;
   font-weight: 700;
   position: absolute;
   left: 1035px;
   top: 561px;
   width: 37px;
   height: 38px;
-  -webkit-text-stroke: 1px #000000;
 }
 .pro-data-text-15 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 28px;
+    font-size: 28px;
   font-weight: 700;
   position: absolute;
   left: 1098px;
   top: 561px;
   width: 36px;
   height: 38px;
-  -webkit-text-stroke: 1px #000000;
 }
 .pro-data-text-16 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 28px;
+    font-size: 28px;
   font-weight: 700;
   position: absolute;
   left: 1161px;
   top: 561px;
   width: 36px;
   height: 38px;
-  -webkit-text-stroke: 1px #000000;
 }
 .pro-data-text-17 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 28px;
+    font-size: 28px;
   font-weight: 700;
   position: absolute;
   left: 1224px;
   top: 561px;
   width: 34px;
   height: 38px;
-  -webkit-text-stroke: 1px #000000;
 }
 .pro-data-text-18 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 28px;
+    font-size: 28px;
   font-weight: 700;
   position: absolute;
   left: 1286px;
   top: 561px;
   width: 36px;
   height: 38px;
-  -webkit-text-stroke: 1px #000000;
 }
 .pro-data-text-19 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 28px;
+    font-size: 28px;
   font-weight: 700;
   position: absolute;
   left: 1349px;
   top: 561px;
   width: 36px;
   height: 38px;
-  -webkit-text-stroke: 1px #000000;
 }
 .pro-data-text-20 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 28px;
+    font-size: 28px;
   font-weight: 700;
   position: absolute;
   left: 1409px;
   top: 561px;
   width: 41px;
   height: 38px;
-  -webkit-text-stroke: 1px #000000;
 }
 .pro-data-text-21 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 28px;
+    font-size: 28px;
   font-weight: 700;
   position: absolute;
   left: 1475px;
   top: 561px;
   width: 35px;
   height: 38px;
-  -webkit-text-stroke: 1px #000000;
 }
 .pro-data-text-22 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 28px;
+    font-size: 28px;
   font-weight: 700;
   position: absolute;
   left: 1535px;
   top: 561px;
   width: 40px;
   height: 38px;
-  -webkit-text-stroke: 1px #000000;
 }
 .pro-data-text-23 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 28px;
+    font-size: 28px;
   font-weight: 700;
   position: absolute;
   left: 1598px;
   top: 561px;
   width: 40px;
   height: 38px;
-  -webkit-text-stroke: 1px #000000;
 }
 .pro-data-text-24 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 28px;
+    font-size: 28px;
   font-weight: 700;
   position: absolute;
   left: 1660px;
   top: 561px;
   width: 41px;
   height: 38px;
-  -webkit-text-stroke: 1px #000000;
 }
 .pro-data-text-25 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 28px;
+    font-size: 28px;
   font-weight: 700;
   position: absolute;
   left: 1723px;
   top: 561px;
   width: 40px;
   height: 38px;
-  -webkit-text-stroke: 1px #000000;
 }
 .pro-data-252 {
   background: #123478;
@@ -3919,15 +3808,13 @@
 .pro-data-text-252 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 28px;
+    font-size: 28px;
   font-weight: 700;
   position: absolute;
   left: 1786px;
   top: 561px;
   width: 40px;
   height: 38px;
-  -webkit-text-stroke: 1px #000000;
 }
 .pro-data-253 {
   background: #123478;
@@ -3943,15 +3830,13 @@
 .pro-data-text-253 {
   color: #ffffff;
   text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 28px;
+    font-size: 28px;
   font-weight: 700;
   position: absolute;
   left: 1849px;
   top: 561px;
   width: 40px;
   height: 38px;
-  -webkit-text-stroke: 1px #000000;
 }
 .cycle-0 {
   background: #d9d9d9;
