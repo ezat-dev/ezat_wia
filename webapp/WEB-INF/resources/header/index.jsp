@@ -126,13 +126,18 @@
     .toggle-group p:hover {
       color: #7ab2ff;
     }
-
+	
+	.teczen{
+	height: 30px; /* 원하는 높이로 설정 */
+    width: 110px;
+	
+	}
   </style>
 </head>
 <body>
   <main>
     <header class="site__header">
-      <h1 class="brand">lo<span class="brand--point">go</span></h1>
+      <img class="teczen" src="/DHT/image/header_navigation/teczen.png" />
       <div class="toggle-group">
         <p id="toggleCommon">공통로</p>
         <p id="toggleSequential">연속로</p>

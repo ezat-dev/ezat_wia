@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/DHT/css/tic_cm/vars.css">
   <link rel="stylesheet" href="/DHT/css/tic_cm/style.css">
-  
+	<jsp:include page="../include/pluginpage.jsp"/>
   
   <style>
    a,
@@ -87,6 +87,45 @@
     <div class="tem-3-text-box"></div>
     <div class="tem-3-text">템퍼링로 3존</div>
   </div>
-  
+<script>
+
+//전역변수
+var ticCmInterval;
+
+//로드
+$(document).ready(function() {
+	ticCmView();
+	ticCmInterval = setInterval("ticCmView()", 1000);
+});
+
+//OPC값 알람 조회
+function ticCmView(){
+	$.ajax({
+		url:"/DHT/ticCm/view",
+		type:"post",
+		dataType:"json",
+		success:function(result){				
+			var data = result.multiValues;
+			
+          for(let key in data){
+          	for(let keys in data[key]){
+          		var d = data[key];
+					if(d[keys].action == "value"){
+						value(keys, d[keys].value);
+					}
+          	}                    	
+          }
+		}
+	});
+}
+
+
+function value(keys, value){
+	$("."+keys).text(value);
+	$("."+keys).css("text-align","center");
+	$("."+keys).css("padding-top","10px");
+}
+
+</script>
 </body>
 </html>

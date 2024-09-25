@@ -11,5 +11,9 @@
    <mapper resource="mybatis/mapper/alarmCm.xml"/>
    <mapper resource="mybatis/mapper/trendCcf.xml"/>
    <mapper resource="mybatis/mapper/trendCm.xml"/>
+   <mapper resource="mybatis/mapper/ioCcfList.xml"/>
+   <mapper resource="mybatis/mapper/ioCmList.xml"/>
+   <mapper resource="mybatis/mapper/autoConCm.xml"/>
+   <mapper resource="mybatis/mapper/autoConCcf.xml"/>   
   </mappers>
 </configuration>

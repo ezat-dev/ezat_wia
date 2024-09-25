@@ -56,7 +56,23 @@
 		max-height: 95%;
 		vertical-align: top;
 		resize:none;
-	}   
+	}
+	
+.check-icon{
+	width: 16px;
+	height: 8px;
+	border: 2px solid red;
+	margin-top: 4px;
+}
+
+.check-icon--apply-origin{
+	border:2px solid red;
+	border-top: 0;
+	border-right: 0;
+	transform: rotate(-45deg);
+	transform-origin: 25% 25%;
+}
+
    </style>
   <title>Document</title>
 </head>
@@ -356,7 +372,14 @@ function getAlarmText(){
 			var data = result.data;
 			
             for(let key in data){
-            	$("."+data[key].ai_webclass).text(data[key].ai_plcname)
+            	var inText = 0;
+            
+            	$("."+data[key].ai_webclass).text(data[key].ai_plcname);
+            	
+            	var div = "<div style='float:right;' class='check-icon check-icon--apply-origin'></div>";
+            	if(data[key].ac_count > 0){
+            		$("."+data[key].ai_webclass).append(div);
+            	}
             }
 		}
 	});

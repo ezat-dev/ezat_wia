@@ -1,5 +1,6 @@
 package com.wia.controller;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -16,6 +17,7 @@ import com.wia.domain.AlarmHistory;
 import com.wia.domain.AlarmRanking;
 import com.wia.service.AlarmHistoryCcfService;
 import com.wia.service.AlarmRankingCcfService;
+import com.wia.util.AlarmMap;
 
 @Controller
 public class AlarmRankingCcfController {
@@ -42,10 +44,23 @@ public class AlarmRankingCcfController {
     	alarmRanking.setSdateTime(sdateTime);
     	alarmRanking.setEdateTime(edateTime);
     	
+    	AlarmMap alarmMap = new AlarmMap();
+    	
+    	List<AlarmRanking> alarmList = new ArrayList<AlarmRanking>();    	
+    	
     	List<AlarmRanking> alarmRankingList = alarmRankingCcfService.alarmRankingCcfList(alarmRanking);
+
+    	for(AlarmRanking alarms : alarmRankingList) {
+    		AlarmRanking alarm = new AlarmRanking();
+    		alarm.setTagname(alarmMap.ccfAlarmGet(alarms.getTagname()));
+    		alarm.setAlarmdesc(alarms.getAlarmdesc());
+    		alarm.setAlarmcount(alarms.getAlarmcount());
+    		
+    		alarmList.add(alarm);
+    	}
     	
     	rtnMap.put("last_page",1);
-    	rtnMap.put("data", alarmRankingList);
+    	rtnMap.put("data", alarmList);
     	
     	return rtnMap;
     }

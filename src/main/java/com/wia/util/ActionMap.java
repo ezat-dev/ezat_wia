@@ -43,27 +43,26 @@ public class ActionMap {
 
 		String text = tagName.substring(0, index);
 		
-//		result = actionMap.get(text).toString();
-
-		if("analog".equals(tagType)) {
+		if("analog".equals(tagType)){
 			result = "value";
-		}else {
-			if(text.contains("alarm")) {
+		}else{
+			if(text.contains("io")){
+				result = "red"; 
+			}else if(text.contains("alarm")){
 				result = "c";
-			}else if(text.contains("yello-left")) {
+			}else if(text.contains("auto")) {
+				result = "c";
+			}else if(text.contains("data")) {
+				result = "c";
+			}else if(text.contains("sag")) {
+				result = "cv";
+			}else if(text.contains("yello-left") || text.contains("yello-right") || 
+					text.contains("green-up") || text.contains("green-down")){
 				result = "b";
-			}else if(text.contains("yello-right")) {
-				result = "b";
-			}else if(text.contains("green-up")) {
-				result = "b";
-			}else if(text.contains("green-down")) {
-				result = "b";
-			}else {
-				//v는 .val포함
-				result = "v";
+			}else{
+				result = "v"; // v는 .val 포함
 			}
-		}
-		
+		}		
 		return result;
 		
 	}	

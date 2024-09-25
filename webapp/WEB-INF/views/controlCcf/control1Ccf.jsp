@@ -7,8 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/DHT/css/control_1/vars.css">
   <link rel="stylesheet" href="/DHT/css/control_1/style.css">
-
-      
+<jsp:include page="../include/pluginpage.jsp"/>
   <style>
 
    a,
@@ -210,10 +209,77 @@
   </div>
   
   
-  <script>
-   function ButtonIndex2() {
-     window.location.href = '/DHT/control_1/index2'; 
-        }
+<script>
+
+ //전역변수
+var controlCcfInterval;
+ 
+
+//로드
+$(document).ready(function() {
+	controlCcfView();
+	controlCcfInterval = setInterval("controlCcfView()", 1000);
+});
+
+	function ButtonIndex2() {
+		window.location.href = '/DHT/controlCcf2'; 
+	}
+	
+ //OPC값 알람 조회
+ function controlCcfView(){
+ 	$.ajax({
+ 		url:"/DHT/controlCcf1/view",
+ 		type:"post",
+ 		dataType:"json",
+ 		success:function(result){				
+ 			var data = result.multiValues;
+ 			
+             for(let key in data){
+             	for(let keys in data[key]){
+             		var d = data[key];
+
+ 					if(d[keys].action == "v"){
+ 						v(keys, d[keys].value);
+ 					}
+             	}
+             }
+ 		}
+ 	});
+ }
+
+function v(keys, value){
+	
+	if(keys.indexOf("off") != -1 || keys.indexOf("oil-pump-1") != -1){
+		//꺼짐일때, 유조펌프 1번일때
+		if(value == true){
+			$("."+keys).css("background-color","#FF0000");
+			$("."+keys+"-text").css("color","#FFFFFF");
+		}else{
+			$("."+keys).css("background-color","#f9f4f4");		
+			$("."+keys+"-text").css("color","#000000");
+		}		
+	}else if(keys.indexOf("on") != -1 ||keys.indexOf("auto") != -1 || keys.indexOf("oil-pump-2") != -1){
+		//켜짐일때, 자동일때, 유조펌프 2번일때
+		if(value == true){			
+			$("."+keys).css("background-color","#00FF00");
+			$("."+keys+"-text").css("color","#FF0000");
+		}else{
+			$("."+keys).css("background-color","#f9f4f4");		
+			$("."+keys+"-text").css("color","#000000");
+		}
+	}else if(keys.indexOf("manual") != -1){
+		//수동일때
+		if(value == true){			
+			$("."+keys).css("background-color","#FFFF24");
+			$("."+keys+"-text").css("color","#FF0000");
+		}else{
+			$("."+keys).css("background-color","#f9f4f4");		
+			$("."+keys+"-text").css("color","#000000");
+		}		
+	}
+
+}
+
 </script>
 
 </body>

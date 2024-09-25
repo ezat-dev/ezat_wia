@@ -13,7 +13,7 @@
 				FROM ALARMDATA
 				WHERE 1=1
 				AND alarmgroup = 'ALARM_CCF'
-				AND time >= ''
+				AND time BETWEEN #{sdateTime} AND #{edateTime}
 				ORDER BY time
 			) AS aa
 			WHERE 1=1

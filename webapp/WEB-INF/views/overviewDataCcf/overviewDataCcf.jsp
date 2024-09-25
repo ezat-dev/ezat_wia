@@ -10,6 +10,11 @@
 	<link rel="stylesheet" href="/DHT/css/overview_1_1/style.css">
 	<jsp:include page="../include/pluginpage.jsp"/>
 <style>
+@keyframes blink-effect {
+  50% {
+    opacity: 0;
+  }
+}  
    a,
    button,
    input,
@@ -56,18 +61,26 @@
     <div class="ccf-tray-2"></div>
     <div class="ccf-tray-3"></div>
     <div class="ccf-tray-32"></div>
-    <div class="clutchon-box-1"></div>
+    <div class="clutchon-box-1">
+      CLUTCH
+      <br />
+      ON    
+    </div>
+    <!-- 
     <div class="clutchon-text-1">
+
+    </div>
+     -->
+    <div class="clutchon-box-2">
       CLUTCH
       <br />
-      ON
+      ON    
     </div>
-    <div class="clutchon-box-2"></div>
+    <!-- 
     <div class="clutchon-text-2">
-      CLUTCH
-      <br />
-      ON
+
     </div>
+     -->
     <div class="down-box-1"></div>
     <div class="down-text-1">하강</div>
     <div class="up-box-1"></div>
@@ -319,66 +332,64 @@
     <img class="green-down-8" src="/DHT/image/overview_1_1/green-down-80.png" />
     <img class="green-up-9" src="/DHT/image/overview_1_1/green-up-90.png" />
     <img class="green-down-9" src="/DHT/image/overview_1_1/green-down-90.png" />
-    <div class="tong-0"></div>
+    <div class="tong-0">0</div>
+    <div class="tong-1">1</div>
+    <div class="tong-2">2</div>
+    <div class="tong-3">3</div>
+    <div class="tong-4">4</div>
+    <div class="tong-5">5</div>
+    <div class="tong-6">6</div>
+    <div class="tong-7">7</div>
+    <div class="tong-8">8</div>
+    <div class="tong-9">9</div>
+    <div class="tong-10">10</div>
+    <div class="tong-11">11</div>
+    <div class="tong-12">12</div>
+    <div class="tong-13">13</div>
+    <div class="tong-14">14</div>
+    <div class="tong-15">15</div>
+    <div class="tong-16">16</div>
+    <div class="tong-17">17</div>
+    <div class="tong-18">18</div>
+    <div class="tong-19">19</div>
+    <div class="tong-20">20</div>
+    <div class="tong-21">21</div>
+    <div class="tong-22">22</div>
+    <div class="tong-23">23</div>
+    <div class="tong-24">24</div>
+    <div class="tong-25">25</div>
+    <div class="tong-26">26</div>
+    <div class="tong-27">27</div>
+<!--     
     <div class="tong-text-0">0</div>
-    <div class="tong-1"></div>
     <div class="tong-text-1">1</div>
-    <div class="tong-2"></div>
     <div class="tong-text-2">2</div>
-    <div class="tong-3"></div>
     <div class="tong-text-3">3</div>
-    <div class="tong-4"></div>
     <div class="tong-text-4">4</div>
-    <div class="tong-5"></div>
     <div class="tong-text-5">5</div>
-    <div class="tong-6"></div>
     <div class="tong-text-6">6</div>
-    <div class="tong-7"></div>
     <div class="tong-text-7">7</div>
-    <div class="tong-8"></div>
     <div class="tong-text-8">8</div>
-    <div class="tong-9"></div>
     <div class="tong-text-9">9</div>
-    <div class="tong-10"></div>
     <div class="tong-text-10">10</div>
-    <div class="tong-11"></div>
     <div class="tong-text-11">11</div>
-    <div class="tong-12"></div>
     <div class="tong-text-12">12</div>
-    <div class="tong-13"></div>
     <div class="tong-text-13">13</div>
-    <div class="tong-14"></div>
     <div class="tong-text-14">14</div>
-    <div class="tong-15"></div>
     <div class="tong-text-15">15</div>
-    <div class="tong-16"></div>
     <div class="tong-text-16">16</div>
-    <div class="tong-17"></div>
     <div class="tong-text-17">17</div>
-    <div class="tong-18"></div>
     <div class="tong-text-18">18</div>
-    <div class="tong-19"></div>
     <div class="tong-text-19">19</div>
-    <div class="tong-20"></div>
     <div class="tong-text-20">20</div>
-    <div class="tong-21"></div>
     <div class="tong-text-21">21</div>
-    <div class="tong-22"></div>
     <div class="tong-text-22">22</div>
-    <div class="tong-23"></div>
     <div class="tong-text-23">23</div>
-    <!-- <div class="tong-24-1"></div>
-    <div class="tong-text-24-1">24</div>
-    <div class="tong-24-2"></div>
-    <div class="tong-text-24-2">24</div> -->
-    <div class="tong-24-3"></div>
     <div class="tong-text-24-3">24</div>
-    <div class="tong-25"></div>
     <div class="tong-text-25">25</div>
-    <div class="tong-26"></div>
     <div class="tong-text-26">26</div>
-    <div class="tong-27"></div>
     <div class="tong-text-27">27</div>
+ -->
     <div class="product-data"></div>
     <div class="pro-data-text-box"></div>
     <div class="cycle-text-box"></div>

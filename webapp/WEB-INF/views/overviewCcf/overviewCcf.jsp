@@ -8,8 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/DHT/css/overview_1/vars.css">
   <link rel="stylesheet" href="/DHT/css/overview_1/style.css">
-  <%@ page contentType="text/html; charset=UTF-8" language="java" %>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<jsp:include page="../include/pluginpage.jsp"/>
   
   <style>
 @keyframes blink-effect {
@@ -360,12 +359,14 @@
     <div class="drain-mini-text">드레인</div>
     <div class="oil-cool-text-1">유조 냉각펌프 1번</div>
     <div class="oil-cool-text-2">유조 냉각펌프 2번</div>
+<!--     
     <div class="alarm-box"></div>
     <div class="alarm-text-box"></div>
     <div class="alarm-reset-button"></div>
     <div class="alarm-stop-button"></div>
     <div class="alarm-warring"></div>
     <div class="alarm-text">알람</div>
+-->    
     <div class="exit-loading-box"></div>
     <div class="exit-loading-text">출구 대기시간</div>
     <div class="exit-loading-value-box"></div>
@@ -555,6 +556,11 @@ function b(keys, value){
 function value(keys, value){
 	$("."+keys).text(value);
 	$("."+keys).css("display","");
+	$("."+keys).css("text-align","center");
+	
+	if(keys.indexOf("pv") == -1){
+		$("."+keys).css("color","#FF0000");
+	}	
 }
 
 </script>

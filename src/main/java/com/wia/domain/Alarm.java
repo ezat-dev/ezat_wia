@@ -18,6 +18,7 @@ public class Alarm {
 	private String ac_comment;
 	private String ac_filename;
 	private String ac_pdf_filename;
+	private int ac_count;
 	private String ac_yn;
 	
 	//파일유무 구분
@@ -127,4 +128,11 @@ public class Alarm {
 	public void setDbSaveGb(String dbSaveGb) {
 		this.dbSaveGb = dbSaveGb;
 	}
+	public int getAc_count() {
+		return ac_count;
+	}
+	public void setAc_count(int ac_count) {
+		this.ac_count = ac_count;
+	}
+	
 }

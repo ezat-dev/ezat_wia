@@ -7,9 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/DHT/css/control_3/vars.css">
   <link rel="stylesheet" href="/DHT/css/control_3/style.css">
-  
-  
-  <style>
+<jsp:include page="../include/pluginpage.jsp"/>
+<style>
    a,
    button,
    input,
@@ -129,7 +128,73 @@
   <div class="rins-oil-off"></div>
   <div class="rins-oil-off-text">꺼짐</div>
 </div>
+<script>
 
-  
+//전역변수
+var controlCmInterval;
+
+
+//로드
+$(document).ready(function() {
+	controlCmView();
+	controlCmInterval = setInterval("controlCmView()", 1000);
+});
+	
+//OPC값 알람 조회
+function controlCmView(){
+	$.ajax({
+		url:"/DHT/controlCm1/view",
+		type:"post",
+		dataType:"json",
+		success:function(result){				
+			var data = result.multiValues;
+			
+            for(let key in data){
+             	for(let keys in data[key]){
+             		var d = data[key];
+
+ 					if(d[keys].action == "v"){
+ 						v(keys, d[keys].value);
+ 					}
+             	}
+             }
+		}
+	});
+}
+
+function v(keys, value){
+	
+	if(keys.indexOf("off") != -1 || keys.indexOf("oil-pump-1") != -1){
+		//꺼짐일때, 유조펌프 1번일때
+		if(value == true){
+			$("."+keys).css("background-color","#FF0000");
+			$("."+keys+"-text").css("color","#FFFFFF");
+		}else{
+			$("."+keys).css("background-color","#f9f4f4");		
+			$("."+keys+"-text").css("color","#000000");
+		}		
+	}else if(keys.indexOf("on") != -1 ||keys.indexOf("auto") != -1 || keys.indexOf("oil-pump-2") != -1){
+		//켜짐일때, 자동일때, 유조펌프 2번일때
+		if(value == true){			
+			$("."+keys).css("background-color","#00FF00");
+			$("."+keys+"-text").css("color","#FF0000");
+		}else{
+			$("."+keys).css("background-color","#f9f4f4");		
+			$("."+keys+"-text").css("color","#000000");
+		}
+	}else if(keys.indexOf("manual") != -1){
+		//수동일때
+		if(value == true){			
+			$("."+keys).css("background-color","#FFFF24");
+			$("."+keys+"-text").css("color","#FF0000");
+		}else{
+			$("."+keys).css("background-color","#f9f4f4");		
+			$("."+keys+"-text").css("color","#000000");
+		}		
+	}
+
+}
+
+</script>  
 </body>
 </html>

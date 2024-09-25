@@ -3,16 +3,40 @@
  <mapper namespace="alarmCm">
 	<select id="alarmListCm1AlarmData" resultType="alarm">
 		SELECT *
-		FROM tb_alarm_info
-		WHERE 1=1
-		AND ai_webdir = 'alarm21'
+		FROM (
+			SELECT *
+			FROM tb_alarm_info
+			WHERE 1=1
+			AND ai_webdir = 'alarm21'
+		) AS alarm1
+		LEFT OUTER JOIN
+		(
+			SELECT ac_webdir, ac_webclass, COUNT(*) AS ac_count
+			FROM tb_alarm_cmt
+			WHERE ac_webdir = 'alarm21'
+			GROUP BY ac_webdir, ac_webclass
+		) AS alarm_cmt
+		ON alarm1.ai_webdir = alarm_cmt.ac_webdir
+		AND alarm1.ai_webclass = alarm_cmt.ac_webclass
 	</select>
 	
 	<select id="alarmListCm2AlarmData" resultType="alarm">
 		SELECT *
-		FROM tb_alarm_info
-		WHERE 1=1
-		AND ai_webdir = 'alarm22'
+		FROM (
+			SELECT *
+			FROM tb_alarm_info
+			WHERE 1=1
+			AND ai_webdir = 'alarm22'
+		) AS alarm1
+		LEFT OUTER JOIN
+		(
+			SELECT ac_webdir, ac_webclass, COUNT(*) AS ac_count
+			FROM tb_alarm_cmt
+			WHERE ac_webdir = 'alarm22'
+			GROUP BY ac_webdir, ac_webclass
+		) AS alarm_cmt
+		ON alarm1.ai_webdir = alarm_cmt.ac_webdir
+		AND alarm1.ai_webclass = alarm_cmt.ac_webclass
 	</select>
 	
 	<!-- 현재 선택한 알람의 코멘트이력 조회 -->

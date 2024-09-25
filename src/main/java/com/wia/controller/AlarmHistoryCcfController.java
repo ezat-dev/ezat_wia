@@ -1,5 +1,6 @@
 package com.wia.controller;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.wia.domain.AlarmHistory;
 import com.wia.service.AlarmHistoryCcfService;
+import com.wia.util.AlarmMap;
 
 @Controller
 public class AlarmHistoryCcfController {
@@ -39,10 +41,25 @@ public class AlarmHistoryCcfController {
     	alarmHistory.setSdateTime(sdateTime);
     	alarmHistory.setEdateTime(edateTime);
     	
+    	AlarmMap alarmMap = new AlarmMap();
+    	
+    	
+    	List<AlarmHistory> alarmList = new ArrayList<AlarmHistory>();
+    	
     	List<AlarmHistory> alarmHistoryList = alarmHistoryCcfService.alarmHistoryCcfList(alarmHistory);
+
+    	for(AlarmHistory alarms : alarmHistoryList) {
+    		AlarmHistory alarm = new AlarmHistory();
+    		alarm.setTagname(alarmMap.ccfAlarmGet(alarms.getTagname()));
+    		alarm.setAlarmdesc(alarms.getAlarmdesc());
+    		alarm.setTime(alarms.getTime());
+    		alarm.setLead_alarmtime(alarms.getLead_alarmtime());
+    		
+    		alarmList.add(alarm);
+    	}
     	
     	rtnMap.put("last_page",1);
-    	rtnMap.put("data", alarmHistoryList);
+    	rtnMap.put("data", alarmList);
     	
     	return rtnMap;
     	

@@ -7,8 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/DHT/css/overview_2/vars.css">
   <link rel="stylesheet" href="/DHT/css/overview_2/style.css">
-  
+<jsp:include page="../include/pluginpage.jsp"/>
   <style>
+@keyframes blink-effect {
+  50% {
+    opacity: 0;
+  }
+}  
    a,
    button,
    input,
@@ -239,6 +244,93 @@
   <div class="frame-1"></div>
   <div class="rectangle-1"></div>
 </div>
+<script>
+
+//전역변수
+var overviewInterval;
+
+//로드
+$(document).ready(function() {
+	overviewListView();
+	overviewInterval = setInterval("overviewListView()", 1000);
+});
+
+//OPC값 알람 조회
+function overviewListView(){
+	$.ajax({
+		url:"/DHT/overviewCm/view",
+		type:"post",
+		dataType:"json",
+		success:function(result){				
+			var data = result.multiValues;
+			
+            for(let key in data){
+            	for(let keys in data[key]){
+            		var d = data[key];
+
+					if(d[keys].action == "v"){
+						v(keys, d[keys].value);
+					}else if(d[keys].action == "c"){
+						c(keys, d[keys].value);
+					}else if(d[keys].action == "b"){
+						b(keys, d[keys].value);
+					}else if(d[keys].action == "value"){
+						value(keys, d[keys].value);
+					}
+
+            	}                    	
+            }
+		}
+	});
+}
+
+function v(keys, value){
+//	$("."+keys).text(value);
+	
+	if(value == true){
+		$("."+keys).css("display","");
+	}else{
+		$("."+keys).css("display","none");
+	}
+	
+}
+
+
+function c(keys, value){
+//	$("."+keys).text(value);
+	
+	if(value == true){
+		$("."+keys).css("background-color","red");
+		$("."+keys).css("color","white");
+	}else{
+		$("."+keys).css("background-color","green");
+		$("."+keys).css("color","black");
+	}
+	
+}
+
+function b(keys, value){
+	if(value == true){
+		$("."+keys).css("display","");
+		$("."+keys).css("animation","blink-effect 1s step-end infinite");
+	}else{
+		$("."+keys).css("display","none");
+		$("."+keys).css("animation","");
+	}
+	
+}
+
+function value(keys, value){
+	$("."+keys).text(value);
+	$("."+keys).css("display","");
+	$("."+keys).css("text-align","center");
+	
+	if(keys.indexOf("pv") == -1){
+		$("."+keys).css("color","#FF0000");
+	}		
+}
+
+</script>
 
 </body>
 </html>

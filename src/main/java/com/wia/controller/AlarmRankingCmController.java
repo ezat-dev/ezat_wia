@@ -1,5 +1,6 @@
 package com.wia.controller;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.wia.domain.AlarmRanking;
 import com.wia.service.AlarmHistoryCcfService;
 import com.wia.service.AlarmRankingCmService;
+import com.wia.util.AlarmMap;
 
 @Controller
 public class AlarmRankingCmController {
@@ -40,10 +42,24 @@ public class AlarmRankingCmController {
     	alarmRanking.setSdateTime(sdateTime);
     	alarmRanking.setEdateTime(edateTime);
     	
+    	AlarmMap alarmMap = new AlarmMap();
+    	
+    	List<AlarmRanking> alarmList = new ArrayList<AlarmRanking>();    	    	
+    	
     	List<AlarmRanking> alarmRankingList = alarmRankingCmService.alarmRankingCmList(alarmRanking);
+
+    	for(AlarmRanking alarms : alarmRankingList) {
+    		AlarmRanking alarm = new AlarmRanking();
+    		alarm.setTagname(alarmMap.cmAlarmGet(alarms.getTagname()));
+    		alarm.setAlarmdesc(alarms.getAlarmdesc());
+    		alarm.setAlarmcount(alarms.getAlarmcount());
+    		
+    		alarmList.add(alarm);
+    	}
     	
     	rtnMap.put("last_page",1);
-    	rtnMap.put("data", alarmRankingList);
+    	rtnMap.put("data", alarmList);
+    	
     	
     	return rtnMap;
     }

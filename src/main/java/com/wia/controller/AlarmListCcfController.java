@@ -34,7 +34,7 @@ public class AlarmListCcfController {
 
         return "/alarmListCcf/alarmListCcf1.jsp"; // 
     }
-    
+
     @RequestMapping(value= "/alarmListCcf1/view", method = RequestMethod.POST)
     @ResponseBody
     public Map<String, Object> alarmListCcf1View() throws UaException, InterruptedException, ExecutionException {

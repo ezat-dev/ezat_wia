@@ -8,9 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/DHT/css/overview_2_1/vars.css">
   <link rel="stylesheet" href="/DHT/css/overview_2_1/style.css">
-  
+	<jsp:include page="../include/pluginpage.jsp"/>
   
   <style>
+@keyframes blink-effect {
+  50% {
+    opacity: 0;
+  }
+}    
    a,
    button,
    input,
@@ -346,32 +351,34 @@
     <div class="pro-data-text-25">25</div>
     <div class="pro-data-text-26">26</div>
     <div class="pro-data-text-27">27</div>
-    <div class="tong-0"></div>
-    <div class="tong-1"></div>
-    <div class="tong-2"></div>
-    <div class="tong-3-1"></div>
-    <div class="tong-5"></div>
-    <div class="tong-6"></div>
-    <div class="tong-7"></div>
+    <div class="tong-0">0
+<!--     	<div class="tong-text-0">0</div> -->
+    </div>
+    <div class="tong-1">1</div>
+    <div class="tong-2">2</div>
+    <div class="tong-3">3</div>
+    <div class="tong-5">4</div>
+    <div class="tong-6">5</div>
+    <div class="tong-7">6</div>
     <!-- <div class="tong-8"></div> -->
-    <div class="tong-9"></div>
-    <div class="tong-10"></div>
-    <div class="tong-11"></div>
-    <div class="tong-12"></div>
-    <div class="tong-13"></div>
-    <div class="tong-14"></div>
-    <div class="tong-15"></div>
-    <div class="tong-116"></div>
-    <div class="tong-17"></div>
-    <div class="tong-18"></div>
-    <div class="tong-text-0">0</div>
+    <div class="tong-9">7</div>
+    <div class="tong-10">8</div>
+    <div class="tong-11">9</div>
+    <div class="tong-12">10</div>
+    <div class="tong-13">11</div>
+    <div class="tong-14">12</div>
+    <div class="tong-15">13</div>
+    <div class="tong-16">14</div>
+    <div class="tong-17">15</div>
+    <div class="tong-18">16</div>
+<!--     
     <div class="tong-text-1">1</div>
     <div class="tong-text-2">2</div>
     <div class="tong-text-3-1">3</div>
     <div class="tong-text-5">4</div>
     <div class="tong-text-6">5</div>
     <div class="tong-text-7">6</div>
-    <!-- <div class="tong-text-8">7</div> -->
+<div class="tong-text-8">7</div>
     <div class="tong-text-9">8</div>
     <div class="tong-text-10">9</div>
     <div class="tong-text-11">10</div>
@@ -382,7 +389,116 @@
     <div class="tong-text-16">15</div>
     <div class="tong-text-17">16</div>
     <div class="tong-text-18">17</div>
+ -->    
   </div>
 
 </body>
+
+<script>
+
+//전역변수
+var overviewInterval;
+
+//로드
+$(document).ready(function() {
+	overviewListView();
+	overviewInterval = setInterval("overviewListView()", 2000);
+});
+
+//이벤트
+
+//OPC값 알람 조회
+function overviewListView(){
+	$.ajax({
+		url:"/DHT/overviewDataCm/view",
+		type:"post",
+		dataType:"json",
+		success:function(result){				
+			var data = result.multiValues;
+			
+          for(let key in data){
+          	for(let keys in data[key]){
+          		var d = data[key];
+
+					if(d[keys].action == "v"){
+						v(keys, d[keys].value);
+					}else if(d[keys].action == "c"){
+						c(keys, d[keys].value);
+					}else if(d[keys].action == "b"){
+						b(keys, d[keys].value);
+					}else if(d[keys].action == "value"){
+						value(keys, d[keys].value);
+					}
+
+          	}                    	
+          }
+		}
+	});
+}
+
+function v(keys, value){
+//	$("."+keys).text(value);
+	
+	if(value == true){
+		$("."+keys).css("display","");
+		$("."+keys+" div").css("display","");
+	}else{
+		$("."+keys).css("display","none");
+		$("."+keys+" div").css("display","none");
+	}
+	
+}
+
+
+function c(keys, value){
+//	$("."+keys).text(value);
+	
+	if(value == true){
+		$("."+keys).css("background-color","red");
+		$("."+keys).css("color","white");
+	}else{
+		$("."+keys).css("background-color","green");
+		$("."+keys).css("color","black");
+	}
+	
+}
+
+function b(keys, value){
+	if(value == true){
+		$("."+keys).css("display","");
+		$("."+keys).css("animation","blink-effect 1s step-end infinite");
+	}else{
+		$("."+keys).css("display","none");
+		$("."+keys).css("animation","");
+	}
+	
+}
+
+function value(keys, value){
+	$("."+keys).text(value);
+	$("."+keys).css("display","");
+	$("."+keys).css("text-align","center");
+	$("."+keys).attr("onclick","popupOpen('"+keys+"')");
+}
+
+function popupOpen(keys){
+	console.log(keys);
+	modalOpen();
+}
+
+//모달 열림
+function modalOpen(){
+	$("#modal").css("display","block");
+}
+
+
+//모달 닫힘
+function modalClose(){
+	$("#modal").css("display","none");
+	
+	$("#inputForm")[0].reset();
+}
+
+</script>
+
 </html>

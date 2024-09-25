@@ -3110,6 +3110,10 @@
   position: absolute;
   left: 1768px;
   top: 304px;
+      color: #000000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
 }
 .tong-1 {
   background: #53a7e3;
@@ -3121,6 +3125,10 @@
   position: absolute;
   left: 1697px;
   top: 304px;
+      color: #000000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
 }
 .tong-2 {
   background: #53a7e3;
@@ -3132,8 +3140,12 @@
   position: absolute;
   left: 1626px;
   top: 304px;
+      color: #000000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
 }
-.tong-3-1 {
+.tong-3 {
   background: #53a7e3;
   border-style: solid;
   border-color: #000000;
@@ -3143,6 +3155,10 @@
   position: absolute;
   left: 1531px;
   top: 309px;
+      color: #000000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
 }
 .tong-5 {
   background: #53a7e3;
@@ -3154,6 +3170,10 @@
   position: absolute;
   left: 1427px;
   top: 310px;
+      color: #000000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
 }
 .tong-6 {
   background: #53a7e3;
@@ -3165,6 +3185,10 @@
   position: absolute;
   left: 1331px;
   top: 307px;
+      color: #000000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
 }
 .tong-7 {
   background: #53a7e3;
@@ -3176,6 +3200,10 @@
   position: absolute;
   left: 1264px;
   top: 307px;
+      color: #000000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
 }
 .tong-8 {
   background: #53a7e3;
@@ -3187,6 +3215,10 @@
   position: absolute;
   left: 1188px;
   top: 307px;
+    color: #000000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
 }
 .tong-9 {
   background: #53a7e3;
@@ -3198,6 +3230,10 @@
   position: absolute;
   left: 1138px;
   top: 307px;
+    color: #000000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
 }
 .tong-10 {
   background: #53a7e3;
@@ -3209,6 +3245,10 @@
   position: absolute;
   left: 1099px;
   top: 307px;
+    color: #000000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
 }
 .tong-11 {
   background: #53a7e3;
@@ -3220,6 +3260,10 @@
   position: absolute;
   left: 1060px;
   top: 307px;
+    color: #000000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
 }
 .tong-12 {
   background: #53a7e3;
@@ -3231,6 +3275,10 @@
   position: absolute;
   left: 1016px;
   top: 307px;
+    color: #000000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
 }
 .tong-13 {
   background: #53a7e3;
@@ -3242,6 +3290,10 @@
   position: absolute;
   left: 959px;
   top: 307px;
+    color: #000000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
 }
 .tong-14 {
   background: #53a7e3;
@@ -3253,6 +3305,10 @@
   position: absolute;
   left: 917px;
   top: 307px;
+    color: #000000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
 }
 .tong-15 {
   background: #53a7e3;
@@ -3264,8 +3320,12 @@
   position: absolute;
   left: 877px;
   top: 307px;
+    color: #000000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
 }
-.tong-116 {
+.tong-16 {
   background: #53a7e3;
   border-style: solid;
   border-color: #000000;
@@ -3275,6 +3335,10 @@
   position: absolute;
   left: 830px;
   top: 307px;
+    color: #000000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
 }
 .tong-17 {
   background: #53a7e3;
@@ -3286,6 +3350,10 @@
   position: absolute;
   left: 732px;
   top: 313px;
+    color: #000000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
 }
 .tong-18 {
   background: #53a7e3;
@@ -3297,7 +3365,12 @@
   position: absolute;
   left: 655px;
   top: 313px;
+  color: #000000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;  
 }
+/*
 .tong-text-0 {
   color: #000000;
   text-align: left;
@@ -3306,6 +3379,7 @@
   position: absolute;
   left: 1777px;
   top: 309px;
+  
 }
 .tong-text-1 {
   color: #000000;
@@ -3460,3 +3534,4 @@
   left: 659px;
   top: 318px;
 }
+*/
